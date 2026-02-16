@@ -368,7 +368,7 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: horizontal; /* centraliza horizontal */
-        align-items: center;
+        align-items: horizontal; /* alinha vertical */
         gap: 18px;
         margin-top: 10px;
         flex-wrap: nowrap;
