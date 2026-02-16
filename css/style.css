@@ -335,22 +335,22 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 5px; /* diminui espaço geral */
+        gap: 5px;
     }
 
     /* LOGO MAIOR */
     .logo {
         flex-direction: column;
         align-items: center;
-        gap: 5px; /* aproxima nome da logo */
+        gap: 5px;
     }
 
     .logo img {
-        height: 150px; /* 200 estava exagerado e quebrava layout */
+        height: 150px;
     }
 
     .logo-textos {
-        margin-top: -10px; /* sobe o nome */
+        margin-top: -10px;
         text-align: center;
     }
 
@@ -367,11 +367,11 @@ footer {
     .menu-links {
         display: flex;
         flex-direction: row;
-        justify-content: horizontal; /* centraliza horizontal */
-        align-items: horizontal; /* alinha vertical */
+        justify-content: center;   /* CORRIGIDO */
+        align-items: center;       /* CORRIGIDO */
         gap: 18px;
         margin-top: 10px;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;           /* permite quebrar linha */
     }
 
     .menu-links a {
@@ -379,11 +379,11 @@ footer {
         white-space: nowrap;
     }
 
-    /* BOTÃO PARCEIRO CENTRALIZADO */
+    /* BOTÃO PARCEIRO EMBAIXO DO MENU */
     .btn-parceiro {
-        display: block;
-        width: fit-content;
-        margin: 15px auto 0 auto; /* centraliza */
+        flex-basis: 100%;          /* força ir para linha de baixo */
+        text-align: center;
+        margin-top: 15px;
         padding: 8px 20px;
         font-size: 13px;
     }
