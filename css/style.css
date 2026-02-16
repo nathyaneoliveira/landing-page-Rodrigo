@@ -323,12 +323,17 @@ footer {
 
 @media (max-width: 768px) {
 
-    .menu-toggle {
-    display: none;
-    font-size: 28px;
-    color: #fff;
-    cursor: pointer;
-}
+  .menu-links {
+        display: flex;
+        flex-direction: row;   /* mantém em linha */
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        flex-wrap: nowrap;     /* impede quebrar linha */
+        overflow-x: auto;      /* permite rolar lateral se precisar */
+        white-space: nowrap;
+        width: 100%;
+    }
     body {
         padding-top: 100px; /* diminui espaço do header */
     }
