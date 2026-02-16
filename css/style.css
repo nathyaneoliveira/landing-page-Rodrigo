@@ -367,8 +367,8 @@ footer {
     .menu-links {
         display: flex;
         flex-direction: row;
-        justify-content: center;   /* CORRIGIDO */
-        align-items: center;       /* CORRIGIDO */
+        justify-content: horizontal;   /* CORRIGIDO */
+        align-items: horizontal;       /* CORRIGIDO */
         gap: 18px;
         margin-top: 10px;
         flex-wrap: wrap;           /* permite quebrar linha */
