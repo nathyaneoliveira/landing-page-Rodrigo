@@ -317,73 +317,78 @@ footer {
     padding: 50px;
     margin-top: 80px;
 }
-/* ============================= */
-/* AJUSTE MOBILE REAL */
-/* ============================= */
+/* ================================= */
+/* MOBILE E TABLET ORGANIZADO */
+/* ================================= */
 
 @media (max-width: 768px) {
 
-  .menu-links {
-        display: flex;
-        flex-direction: row;   /* mantém em linha */
-        justify-content: center;
-        align-items: center;
-        gap: 18px;
-        flex-wrap: nowrap;     /* impede quebrar linha */
-        overflow-x: auto;      /* permite rolar lateral se precisar */
-        white-space: nowrap;
-        width: 100%;
-    }
     body {
-        padding-top: 100px; /* diminui espaço do header */
+        padding-top: 95px;
     }
 
     header {
-        padding: 12px 5%;
+        padding: 10px 5%;
     }
 
     .nav-container {
+        display: flex;
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
+        gap: 10px;
     }
 
+    /* LOGO MAIOR */
     .logo {
         flex-direction: column;
-        gap: 8px;
-        text-align: center;
+        align-items: center;
+        gap: 5px;
     }
 
     .logo img {
-        height: 60px; /* diminui bastante */
+        height: 85px;
+    }
+
+    .logo-textos {
+        margin-top: -6px;
+        text-align: center;
     }
 
     .logo-nome {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .logo-sub {
-        font-size: 10px;
-        letter-spacing: 2px;
+        font-size: 11px;
+        letter-spacing: 3px;
     }
 
+    /* MENU EM UMA LINHA */
     .menu-links {
-        flex-direction: column;
-        gap: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 12px;
+        flex-wrap: nowrap;
     }
 
     .menu-links a {
         font-size: 13px;
+        white-space: nowrap;
     }
 
+    /* Remove botão parceiro do meio */
     .btn-parceiro {
-        padding: 8px 18px;
-        font-size: 12px;
+        display: none;
     }
 
+    /* HERO AJUSTADO */
     .hero {
         margin-top: 0;
-        min-height: auto;
         padding: 120px 20px 80px;
+        min-height: auto;
     }
 
     .hero h1 {
@@ -401,55 +406,9 @@ footer {
         padding: 14px;
         font-size: 13px;
     }
-/*tablet*/
-}
-@media (max-width: 768px) {
-
-    header {
-        padding: 15px 5%;
-    }
-
-    .nav-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-    }
-
-    .menu-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 18px;
-    }
-
-    .logo img {
-        height: 90px;
-    }
-
-    .hero {
-        margin-top: 200px;
-        height: auto;
-        padding: 80px 20px;
-    }
-
-    .hero h1 {
-        font-size: 34px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
 
     section {
         padding: 80px 5%;
-    }
-
-    .titulo-secao {
-        font-size: 32px;
-        margin-bottom: 50px;
-    }
-
-    .card {
-        padding: 35px;
     }
 
 }
