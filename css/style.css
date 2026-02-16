@@ -1,6 +1,3 @@
-/* ============================= */
-/* VARIÁVEIS GLOBAIS */
-/* ============================= */
 :root {
     --verde-escuro: #0f2b24;
     --dourado: #d4af37;
@@ -9,13 +6,14 @@
     --sombra: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* ============================= */
-/* RESET */
-/* ============================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23,11 +21,10 @@ body {
     background: var(--branco);
     color: var(--texto-escuro);
     line-height: 1.6;
+    padding-top: 140px;
 }
 
-/* ============================= */
 /* HEADER */
-/* ============================= */
 header {
     position: fixed;
     width: 100%;
@@ -38,16 +35,12 @@ header {
     border-bottom: 2px solid var(--dourado);
 }
 
-/* Container geral - tudo em uma linha */
 .nav-container {
     display: flex;
     align-items: center;
-    gap: 60px;
+    justify-content: space-between;
 }
 
-/* ============================= */
-/* LOGO + NOME */
-/* ============================= */
 .logo {
     display: flex;
     align-items: center;
@@ -55,102 +48,71 @@ header {
 }
 
 .logo img {
-    height: 150px;
-    width: auto;
+    height: 120px;
 }
 
 .logo-textos {
     display: flex;
     flex-direction: column;
-    line-height: 1.2;
 }
 
 .logo-nome {
     font-family: 'Playfair Display', serif;
-    font-size: 26px;
-    letter-spacing: 1px;
+    font-size: 24px;
     color: var(--dourado);
 }
 
 .logo-sub {
-    font-size: 12px;
-    letter-spacing: 3px;
+    font-size: 11px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: #fff;
-    opacity: 0.85;
 }
 
-/* ============================= */
-/* MENU */
-/* ============================= */
 .menu-links {
     display: flex;
+    gap: 30px;
     align-items: center;
-    gap: 35px;
 }
 
 .menu-links a {
     text-decoration: none;
     color: #fff;
     font-size: 14px;
-    letter-spacing: 1.5px;
     text-transform: uppercase;
-    font-weight: 500;
-    transition: 0.3s ease;
 }
 
 .menu-links a:hover {
     color: var(--dourado);
 }
 
-/* ============================= */
-/* BOTÃO PARCEIRO */
-/* ============================= */
 .btn-parceiro {
-    padding: 12px 30px;
-    background: transparent;
-    border: 1.5px solid var(--dourado);
+    padding: 10px 25px;
+    border: 1px solid var(--dourado);
     color: var(--dourado);
-    text-decoration: none;
-    font-size: 13px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 600;
-    border-radius: 4px;
-    transition: all 0.3s ease;
 }
 
-.btn-parceiro:hover {
-    background: var(--dourado);
-    color: var(--verde-escuro);
-    transform: translateY(-2px);
-}
-
-/* ============================= */
 /* HERO */
-/* ============================= */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(15,43,36,0.88), rgba(15,43,36,0.88)),
+        url('https://us.123rf.com/450wm/stockstudio44/stockstudio442208/stockstudio44220800009/191115375-tema-da-lei-escrit%C3%B3rio-do-juiz-themis-e-martelo-na-mesa-do-juiz-prateleira-do-livro-no-fundo.jpg?ver=6')
+        center/cover no-repeat;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 
-    padding: 0 20px;
-    margin-top: 140px;
-
+    padding: 80px 20px;
     color: #fff;
-
-    background:
-        linear-gradient(rgba(15, 43, 36, 0.88), rgba(15, 43, 36, 0.88)),
-        url('https://us.123rf.com/450wm/stockstudio44/stockstudio442208/stockstudio44220800009/191115375-tema-da-lei-escrit%C3%B3rio-do-juiz-themis-e-martelo-na-mesa-do-juiz-prateleira-do-livro-no-fundo.jpg?ver=6')
-        center / cover no-repeat;
 }
 
 .hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 58px;
+    font-size: 52px;
     margin-bottom: 25px;
     max-width: 900px;
 }
@@ -158,64 +120,20 @@ header {
 .hero p {
     max-width: 750px;
     margin-bottom: 40px;
-    font-size: 18px;
-    opacity: 0.95;
 }
 
-/* ============================= */
-/* BOTÃO PRINCIPAL */
-/* ============================= */
+/* BOTÃO */
 .btn-dourado {
-    position: relative;
-    display: inline-block;
-    padding: 16px 46px;
+    padding: 15px 40px;
     background: var(--dourado);
     color: var(--verde-escuro);
     text-decoration: none;
     font-weight: 600;
-    letter-spacing: 2px;
     text-transform: uppercase;
     border-radius: 4px;
-    overflow: hidden;
-
-    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
-    transition: all 0.3s ease;
 }
 
-.btn-dourado:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(212, 175, 55, 0.5);
-}
-
-.btn-dourado::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 60%;
-    height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,0.4),
-        transparent
-    );
-    transform: skewX(-25deg);
-}
-
-.btn-dourado:hover::before {
-    animation: brilho 0.9s ease forwards;
-}
-
-@keyframes brilho {
-    100% {
-        left: 140%;
-    }
-}
-
-/* ============================= */
-/* SECTIONS */
-/* ============================= */
+/* SEÇÕES */
 section {
     padding: 120px 8%;
 }
@@ -223,48 +141,33 @@ section {
 .titulo-secao {
     text-align: center;
     font-family: 'Playfair Display', serif;
-    font-size: 40px;
-    margin-bottom: 70px;
+    font-size: 38px;
+    margin-bottom: 60px;
 }
 
-/* ============================= */
-/* GRID */
-/* ============================= */
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 50px;
+    gap: 40px;
 }
 
-/* ============================= */
-/* CARDS */
-/* ============================= */
 .card {
     background: #fff;
-    padding: 45px;
+    padding: 40px;
     border-top: 5px solid var(--dourado);
     box-shadow: var(--sombra);
-    transition: all 0.4s ease;
 }
 
-.card:hover {
-    transform: translateY(-8px);
-}
-
-/* ============================= */
 /* EQUIPE */
-/* ============================= */
 .equipe img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     display: block;
-    margin: 0 auto 25px;
-    border: 4px solid var(--dourado);
+    margin: 0 auto 20px;
 }
-/* ============================= */
-/* FORMULÁRIO PREMIUM */
-/* ============================= */
+
+/* FORM */
 .formulario {
     max-width: 650px;
     margin: 0 auto;
@@ -274,46 +177,55 @@ section {
 .formulario textarea,
 .formulario select {
     width: 100%;
-    padding: 16px;
-    margin-bottom: 22px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-family: inherit;
-    font-size: 14px;
-    transition: 0.3s;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
-.formulario input:focus,
-.formulario textarea:focus,
-.formulario select:focus {
-    border-color: var(--dourado);
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
-}
-
-/* ============================= */
-/* WHATSAPP FLOAT */
-/* ============================= */
-.whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background: #25D366;
-    color: #fff;
-    padding: 15px 22px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 500;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
-
-/* ============================= */
 /* FOOTER */
-/* ============================= */
 footer {
     background: var(--verde-escuro);
     color: #fff;
     text-align: center;
-    padding: 50px;
-    margin-top: 80px;
+    padding: 40px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 80px 5%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
 }
