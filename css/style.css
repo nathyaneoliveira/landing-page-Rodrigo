@@ -378,6 +378,12 @@ footer {
         font-size: 13px;
         white-space: nowrap;
     }
+    /* GARANTE QUE O BOTÃO APAREÇA */
+    .btn-parceiro {
+        display: inline-block !important;
+        padding: 8px 16px;
+        font-size: 12px;
+}
 
     /* HERO AJUSTADO */
     .hero {
