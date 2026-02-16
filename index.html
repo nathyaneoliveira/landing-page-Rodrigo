@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC Advogados Associados</title>
+    <meta name="description" content="RC Advogados Associados">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="nav-container">
+
+        <div class="logo">
+            <img src="assets/logo.png" alt="RC Advogados">
+
+            <div class="logo-textos">
+                <span class="logo-nome">Rodrigo Carvalho</span>
+                <span class="logo-sub">Advogados Associados</span>
+            </div>
+        </div>
+
+        <nav class="menu-links">
+            <a href="#">Início</a>
+            <a href="#areas">Áreas</a>
+            <a href="#equipe">Equipe</a>
+            <a href="#contato">Contato</a>
+            <a href="#" class="btn-parceiro">Seja um Parceiro</a>
+        </nav>
+
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <h1>
+        Atuação jurídica de alto nível, combinando precisão técnica
+        e estratégia personalizada.
+    </h1>
+
+    <p>
+        Compromisso absoluto com excelência, segurança jurídica
+        e resultados consistentes para nossos clientes.
+    </p>
+
+    <a href="#contato" class="btn-dourado">
+        Agendar Consultoria
+    </a>
+</section>
+
+<!-- ================= ÁREAS ================= -->
+<section id="areas">
+    <h2 class="titulo-secao">Áreas de Atuação</h2>
+
+    <div class="grid-3">
+        <div class="card">
+            <h3>Direito Empresarial</h3>
+            <p>
+                Assessoria completa para empresas, sócios e investidores,
+                com foco em estruturação societária e mitigação de riscos.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Direito Tributário</h3>
+            <p>
+                Planejamento tributário estratégico e defesa técnica
+                em demandas administrativas e judiciais.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Direito Civil</h3>
+            <p>
+                Atuação estratégica em contratos, responsabilidade civil
+                e litígios relevantes.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= EQUIPE ================= -->
+<section id="equipe">
+    <h2 class="titulo-secao">Nossa Equipe</h2>
+
+    <div class="grid-3 equipe">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1603415526960-f7e0328b5f5e?auto=format&fit=crop&w=800&q=80" alt="Sócio Fundador">
+            <h3>Nome do Sócio Fundador</h3>
+            <p>Especialista em Direito Estratégico.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&w=800&q=80" alt="Advogado Associado">
+            <h3>Nome do Advogado Associado</h3>
+            <p>Consultoria empresarial e litígios complexos.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= LOCALIZAÇÃO ================= -->
+<section id="mapa">
+    <h2 class="titulo-secao">Localização</h2>
+
+    <p style="text-align:center; margin-bottom:30px;">
+        São Paulo – Atuação em todo território nacional.
+    </p>
+
+    <iframe 
+        src="https://www.google.com/maps?q=São+Paulo&output=embed"
+        width="100%" 
+        height="400" 
+        style="border:0;"
+        loading="lazy">
+    </iframe>
+</section>
+
+<!-- ================= CONTATO ================= -->
+    <section id="contato">
+    <h2 class="titulo-secao">Atendimento Exclusivo</h2>
+
+    <form id="formContato" class="formulario">
+
+        <input type="text" id="nome" placeholder="Nome completo" required>
+
+        <input type="email" id="email" placeholder="E-mail" required>
+
+        <select id="area" required>
+            <option value="">Selecione a área de interesse</option>
+            <option>Direito Empresarial</option>
+            <option>Direito Tributário</option>
+            <option>Direito Civil</option>
+            <option>Outro assunto</option>
+        </select>
+
+        <textarea id="mensagem" rows="5" placeholder="Descreva brevemente sua necessidade"></textarea>
+
+        <button type="submit" class="btn-dourado">
+            Solicitar Atendimento
+        </button>
+
+    </form>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    © 2026 - RC Advogados Associados.
+</footer>
+
+</body>
+</html>
