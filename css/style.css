@@ -367,7 +367,7 @@ footer {
     .menu-links {
         display: flex;
         flex-direction: row;
-        justify-content: center; /* centraliza horizontal */
+        justify-content: horizontal; /* centraliza horizontal */
         align-items: center;
         gap: 18px;
         margin-top: 10px;
