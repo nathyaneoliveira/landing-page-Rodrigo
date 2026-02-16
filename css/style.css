@@ -323,6 +323,12 @@ footer {
 
 @media (max-width: 768px) {
 
+    .menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
     body {
         padding-top: 100px; /* diminui espaço do header */
     }
@@ -390,7 +396,7 @@ footer {
         padding: 14px;
         font-size: 13px;
     }
-
+/*tablet*/
 }
 @media (max-width: 768px) {
 
