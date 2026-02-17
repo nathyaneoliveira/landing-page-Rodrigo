@@ -387,12 +387,12 @@ footer {
 
     /* BOTÃO PARCEIRO EMBAIXO DO MENU */
     .btn-parceiro {
-        flex-basis: 0%;          /* força ir para linha de baixo */
-        text-align: horizontal;       /* CORRIGIDO */
-        margin-top: 5px;
-        padding: 4px 8px;
-        font-size: 5px;
-    }
+        flex-basis: auto;     /* remove quebra forçada */
+        margin-top: 0;        /* remove espaço extra */
+        padding: 8px 14px;
+        font-size: 12px;
+}
+
 
     /* HERO AJUSTADO */
     .hero {
