@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
     <head>
         <meta charset="UTF-8">
-        <title>Agendar Consultoria</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-
-    <body>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agendar Consultoria - RC Advogados</title>
 
         <!-- Google Fonts -->
         <link
@@ -19,6 +17,7 @@
 
     <body>
 
+        <!-- HEADER -->
         <header>
             <div class="nav-container">
 
@@ -31,68 +30,73 @@
                     <a href="index.html#areas">Áreas</a>
                     <a href="index.html#equipe">Equipe</a>
                     <a href="index.html#localizacao">Localização</a>
-                    <a href="btn-parceiro.html">Seja um Parceiro</a>
+                    <a href="parceiro.html">Seja um Parceiro</a>
                 </nav>
 
             </div>
         </header>
 
-                <h2 class="titulo-secao"
-                    style="text-align:center; margin-bottom:50px;">
-                    Agendar Consultoria
-                </h2>
+        <!-- SEÇÃO CONSULTORIA -->
+        <section class="secao-formulario">
 
-                <form id="formContato" class="formulario">
+            <h2 class="titulo-secao">
+                Agendar Consultoria
+            </h2>
 
-                    <input type="text" id="nome" placeholder="Nome completo"
-                        required>
+            <form id="formContato" class="formulario">
 
-                    <input type="email" id="email" placeholder="E-mail"
-                        required>
+                <input type="text" id="nome" placeholder="Nome completo"
+                    required>
 
-                    <select id="area" required>
-                        <option value>Selecione a área de interesse</option>
-                        <option>Direito Empresarial</option>
-                        <option>Direito Tributário</option>
-                        <option>Direito Civil</option>
-                        <option>Outro assunto</option>
-                    </select>
+                <input type="email" id="email" placeholder="E-mail" required>
 
-                    <textarea id="mensagem" rows="5"
-                        placeholder="Descreva brevemente sua necessidade"></textarea>
+                <select id="area" required>
+                    <option value>Selecione a área de interesse</option>
+                    <option>Direito Empresarial</option>
+                    <option>Direito Tributário</option>
+                    <option>Direito Civil</option>
+                    <option>Outro assunto</option>
+                </select>
 
-                    <div class="botoes-form">
+                <textarea id="mensagem" rows="5"
+                    placeholder="Descreva brevemente sua necessidade"></textarea>
 
-                        <button type="submit" class="btn-dourado">
-                            Solicitar Atendimento
-                        </button>
+                <div class="botoes-form">
+                    <button type="submit" class="btn-dourado">
+                        Solicitar Atendimento
+                    </button>
 
-                        <a href="index.html" class="btn-voltar">
-                            Voltar
-                        </a>
-
-                    </div>
-                </form>
-            </section>
-            <!-- ================= FOOTER ================= -->
-            <footer>
-                <section id="localizacao"></section>
-
-                <p style="text-align:center; margin-bottom:30px;">
-                    Praça Padre João, 20 - Centro - Mamanguape/PB - CEP
-                    58.280-000<br><br>
-                    Atuação em todo território nacional.<br>
-
-                    <a href="https://www.google.com/maps?q=-6.838925,-35.125210"
-                        target="_blank"
-                        class="btn-mapa">
-                        Ver localização no Google Maps
+                    <a href="index.html" class="btn-voltar">
+                        Voltar
                     </a>
-                </p>
-                <p>© 2026 - RC Advogados Associados.</p>
-            </footer>
+                </div>
 
-            <script src="js/script.js"></script>
+            </form>
 
-        </body>
-    </html>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>
+                Praça Padre João, 20 - Centro - Mamanguape/PB - CEP
+                58.280-000<br><br>
+                Atuação em todo território nacional.
+            </p>
+
+            <a href="https://www.google.com/maps?q=-6.838925,-35.125210"
+                target="_blank"
+                class="btn-mapa">
+                Ver localização no Google Maps
+            </a>
+
+            <p style="margin-top:30px;">
+                © 2026 - RC Advogados Associados.
+            </p>
+
+        </footer>
+
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

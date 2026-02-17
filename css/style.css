@@ -256,54 +256,52 @@ section {
 }
 
 /* ============================= */
-/* FORMULÁRIO RESPONSIVO */
+/* SEÇÃO FORMULÁRIO */
+/* ============================= */
+
+.secao-formulario {
+    padding: 160px 8% 100px;
+    background: #f8f8f8;
+}
+
+.formulario {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+}
+
+.botoes-form {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* ============================= */
+/* RESPONSIVO */
 /* ============================= */
 
 @media (max-width: 768px) {
 
+    .secao-formulario {
+        padding: 140px 5% 80px;
+    }
+
     .formulario {
-        max-width: 100%;
-        padding: 0 20px;
-        /* respiro lateral */
+        padding: 30px 20px;
     }
 
-    .formulario input,
-    .formulario textarea,
-    .formulario select {
-        padding: 14px;
-        font-size: 16px;
-        /* evita zoom automático no iPhone */
-        margin-bottom: 18px;
+    .botoes-form {
+        flex-direction: column;
     }
 
-    .formulario textarea {
-        min-height: 120px;
-    }
-
-    .btn-dourado {
-        width: 100%;
-        /* botão principal ocupa toda largura */
-        text-align: center;
-    }
-
+    .btn-dourado,
     .btn-voltar {
         width: 100%;
         text-align: center;
-        padding: 10px;
-        font-size: 13px;
-        margin-top: 12px;
     }
-}
-
-/* ============================= */
-/* FOOTER */
-/* ============================= */
-footer {
-    background: var(--verde-escuro);
-    color: #fff;
-    text-align: center;
-    padding: 5px;
-    margin-top: 20px;
 }
 
 /* ================================= */
