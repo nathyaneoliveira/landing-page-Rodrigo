@@ -330,7 +330,7 @@ footer {
 @media (max-width: 768px) {
 
     body {
-        padding-top: 100px; /* compensa header maior */
+        padding-top: 80px; /* compensa header maior */
     }
 
     header {
