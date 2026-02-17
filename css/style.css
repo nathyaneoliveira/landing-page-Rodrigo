@@ -355,7 +355,7 @@ footer {
         height: 300px; /* grande, mas proporcional */
     }
 
-    .logo-textos {
+    /**.logo-textos {
         text-align: center;
     }
 
@@ -363,10 +363,11 @@ footer {
         font-size: 30px; /* nome bem visível */
     }
 
-    .logo-sub {
+    /**.logo-sub {
         font-size: 13px;
         letter-spacing: 3px;
     }
+    **/
 
 }
     /* MENU EM UMA LINHA */
