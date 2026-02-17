@@ -34,7 +34,7 @@ header {
     top: 0;
     z-index: 1000;
     background: var(--verde-escuro);
-    padding: 18px 8%;
+    padding: 10px 6%;
     border-bottom: 2px solid var(--dourado);
 }
 
@@ -313,7 +313,7 @@ footer {
 @media (max-width: 568px) {
 
     body {
-        padding-top: 180px; /* compensa header fixo */
+        padding-top: 100px; /* compensa header fixo */
     }
 
     header {
