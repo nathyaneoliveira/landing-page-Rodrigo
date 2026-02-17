@@ -327,7 +327,7 @@ footer {
 /* MOBILE E TABLET ORGANIZADO */
 /* ================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 568px) {
 
     body {
         padding-top: 80px; /* compensa header maior */
