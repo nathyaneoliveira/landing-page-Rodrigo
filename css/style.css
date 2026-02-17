@@ -23,6 +23,7 @@ body {
     background: var(--branco);
     color: var(--texto-escuro);
     line-height: 1.6;
+    padding-top: 140px; /* compensação header fixo */
 }
 
 /* ============================= */
@@ -38,15 +39,15 @@ header {
     border-bottom: 2px solid var(--dourado);
 }
 
-/* Container geral - tudo em uma linha */
 .nav-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 60px;
 }
 
 /* ============================= */
-/* LOGO + NOME */
+/* LOGO */
 /* ============================= */
 .logo {
     display: flex;
@@ -55,7 +56,7 @@ header {
 }
 
 .logo img {
-    height: 150px;
+    height: 130px;
     width: auto;
 }
 
@@ -107,15 +108,15 @@ header {
 /* BOTÃO PARCEIRO */
 /* ============================= */
 .btn-parceiro {
-    padding: 12px 10px;
+    padding: 10px 14px;
     background: transparent;
     border: 1.5px solid var(--dourado);
     color: var(--dourado);
     text-decoration: none;
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     border-radius: 4px;
     transition: all 0.3s ease;
 }
@@ -130,31 +131,36 @@ header {
 /* HERO */
 /* ============================= */
 .hero {
-    height: 100vh; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 0 20px; 
-    margin-top: 40px; 
-    color: #fff; 
-    background: linear-gradient(rgba(15, 43, 36, 0.88), rgba(15, 43, 36, 0.88)), url('https://us.123rf.com/450wm/stockstudio44/stockstudio442208/stockstudio44220800009/191115375-tema-da-lei-escrit%C3%B3rio-do-juiz-themis-e-martelo-na-mesa-do-juiz-prateleira-do-livro-no-fundo.jpg?ver=6') center / cover no-repeat; } 
-    
-.hero h1 { 
-    font-family: 'Playfair Display', serif; 
-    font-size: 58px; margin-bottom: 25px; 
-    max-width: 900px; } 
-.hero p { 
-    max-width: 750px; 
-    margin-bottom: 40px; 
-    font-size: 18px; 
-    opacity: 0.95; }
+    padding: 0 20px;
+    color: #fff;
+    background: linear-gradient(rgba(15, 43, 36, 0.88), rgba(15, 43, 36, 0.88)),
+    url('https://us.123rf.com/450wm/stockstudio44/stockstudio442208/stockstudio44220800009/191115375-tema-da-lei-escrit%C3%B3rio-do-juiz-themis-e-martelo-na-mesa-do-juiz-prateleira-do-livro-no-fundo.jpg?ver=6') center / cover no-repeat;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    margin-bottom: 25px;
+    max-width: 900px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    opacity: 0.95;
+}
+
 /* ============================= */
 /* BOTÃO PRINCIPAL */
 /* ============================= */
 .btn-dourado {
-    position: relative;
     display: inline-block;
     padding: 16px 46px;
     background: var(--dourado);
@@ -164,41 +170,11 @@ header {
     letter-spacing: 2px;
     text-transform: uppercase;
     border-radius: 4px;
-    overflow: hidden;
-
-    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .btn-dourado:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(212, 175, 55, 0.5);
-}
-
-.btn-dourado::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 60%;
-    height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,0.4),
-        transparent
-    );
-    transform: skewX(-25deg);
-}
-
-.btn-dourado:hover::before {
-    animation: brilho 0.9s ease forwards;
-}
-
-@keyframes brilho {
-    100% {
-        left: 140%;
-    }
 }
 
 /* ============================= */
@@ -232,7 +208,7 @@ section {
     padding: 45px;
     border-top: 5px solid var(--dourado);
     box-shadow: var(--sombra);
-    transition: all 0.4s ease;
+    transition: 0.4s ease;
 }
 
 .card:hover {
@@ -240,18 +216,7 @@ section {
 }
 
 /* ============================= */
-/* EQUIPE */
-/* ============================= */
-.equipe img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 25px;
-    border: 4px solid var(--dourado);
-}
-/* ============================= */
-/* FORMULÁRIO PREMIUM */
+/* FORMULÁRIO */
 /* ============================= */
 .formulario {
     max-width: 650px;
@@ -268,37 +233,10 @@ section {
     border-radius: 4px;
     font-family: inherit;
     font-size: 14px;
-    transition: 0.3s;
 }
-
-.formulario input:focus,
-.formulario textarea:focus,
-.formulario select:focus {
-    border-color: var(--dourado);
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
-}
-.btn-voltar {
-    display: inline-block;
-    font-size: 12px;
-    padding: 6px 10px;
-    margin-top: 8px;
-    background: transparent;
-    color: #b89b3c; /* dourado elegante */
-    border: 1px solid #b89b3c;
-    border-radius: 3px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.btn-voltar:hover {
-    background: #b89b3c;
-    color: #fff;
-}
-
 
 /* ============================= */
-/* WHATSAPP FLOAT */
+/* WHATSAPP */
 /* ============================= */
 .whatsapp-float {
     position: fixed;
@@ -310,7 +248,6 @@ section {
     border-radius: 50px;
     text-decoration: none;
     font-weight: 500;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
 /* ============================= */
@@ -323,87 +260,54 @@ footer {
     padding: 50px;
     margin-top: 80px;
 }
-/* ================================= */
-/* MOBILE AJUSTADO PROFISSIONAL */
-/* ================================= */
 
-@media (max-width: 568px) {
+/* ============================= */
+/* RESPONSIVO */
+/* ============================= */
 
-    body {
-        padding-top: 180px; /* compensa header fixo */
-    }
-
-    header {
-        padding: 15px 5%;
-    }
-
-    .nav-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-    }
-
-    /* ===== LOGO PROPORCIONAL ===== */
-    .logo {
-        flex-direction: column;
-        align-items: center;
-        gap: 6px;
-    }
-
-    .logo img {
-        height: 120px; /* proporcional à tela */
-    }
-
-    .logo-nome {
-        font-size: 22px;
-    }
-
-    .logo-sub {
-        font-size: 12px;
-        letter-spacing: 2px;
-    }
-
-    /* ===== MENU ORGANIZADO ===== */
-    .menu-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: center; /* corrigido */
-        align-items: center;     /* corrigido */
-        gap: 15px;
-        margin-top: 10px;
-        flex-wrap: wrap;
-    }
-
-    .menu-links a {
-        font-size: 13px;
-    }
-
-    /* ===== BOTÃO PARCEIRO ===== */
-    .btn-parceiro {
-        padding: 6px 12px;
-        font-size: 11px;
-    }
-
+/* Notebook */
+@media (max-width: 1200px) {
+    .hero h1 { font-size: 46px; }
 }
 
+/* Tablet */
+@media (max-width: 992px) {
 
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-    /* HERO AJUSTADO */
+    .menu-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 { font-size: 36px; }
+    .hero p { font-size: 16px; }
+
+    section { padding: 90px 6%; }
+}
+
+/* Celular */
+@media (max-width: 768px) {
+
+    body { padding-top: 180px; }
+
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img { height: 100px; }
+
     .hero {
-        margin-top: 0;
         padding: 120px 20px 80px;
         min-height: auto;
     }
 
-    .hero h1 {
-        font-size: 26px;
-        line-height: 1.3;
-    }
-
-    .hero p {
-        font-size: 15px;
-    }
+    .hero h1 { font-size: 26px; }
+    .hero p { font-size: 15px; }
 
     .btn-dourado {
         width: 100%;
@@ -412,25 +316,14 @@ footer {
         font-size: 13px;
     }
 
-    section {
-        padding: 80px 5%;
-    }
-    .btn-mapa {
-        display: inline-block;
-        padding: 10px 22px;
-        background-color: #cba62b;
-        color: #000000;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: 0.3s;
+    section { padding: 70px 5%; }
 }
 
-    .btn-mapa:hover {
-        background-color: #333;
+/* Celular pequeno */
+@media (max-width: 480px) {
+
+    .logo img { height: 80px; }
+    .logo-nome { font-size: 18px; }
+    .menu-links a { font-size: 12px; }
+    .hero h1 { font-size: 22px; }
 }
-body {
-    padding-top: 140px;
-}
-
-
-
