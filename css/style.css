@@ -130,26 +130,32 @@ header {
 /* HERO */
 /* ============================= */
 .hero {
-    height: 100vh; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 0 20px; 
-    margin-top: 40px; 
-    color: #fff; 
-    background: linear-gradient(rgba(15, 43, 36, 0.88), rgba(15, 43, 36, 0.88)), url('https://us.123rf.com/450wm/stockstudio44/stockstudio442208/stockstudio44220800009/191115375-tema-da-lei-escrit%C3%B3rio-do-juiz-themis-e-martelo-na-mesa-do-juiz-prateleira-do-livro-no-fundo.jpg?ver=6') center / cover no-repeat; } 
-    
-.hero h1 { 
-    font-family: 'Playfair Display', serif; 
-    font-size: 58px; margin-bottom: 25px; 
-    max-width: 900px; } 
-.hero p { 
-    max-width: 750px; 
-    margin-bottom: 40px; 
-    font-size: 20px; 
-    opacity: 0.95; }
+    padding: 0 20px;
+    margin-top: 40px;
+    color: #fff;
+    background: linear-gradient(rgba(15, 43, 36, 0.88), rgba(15, 43, 36, 0.88)), url('https://us.123rf.com/450wm/stockstudio44/stockstudio442208/stockstudio44220800009/191115375-tema-da-lei-escrit%C3%B3rio-do-juiz-themis-e-martelo-na-mesa-do-juiz-prateleira-do-livro-no-fundo.jpg?ver=6') center / cover no-repeat;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    margin-bottom: 25px;
+    max-width: 900px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    opacity: 0.95;
+}
+
 /* ============================= */
 /* BOTÃO PRINCIPAL */
 /* ============================= */
@@ -182,12 +188,10 @@ header {
     left: -100%;
     width: 60%;
     height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,0.4),
-        transparent
-    );
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent);
     transform: skewX(-25deg);
 }
 
@@ -250,6 +254,7 @@ section {
     margin: 0 auto 25px;
     border: 4px solid var(--dourado);
 }
+
 /* ============================= */
 /* FORMULÁRIO PREMIUM */
 /* ============================= */
@@ -278,13 +283,15 @@ section {
     outline: none;
     box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
 }
+
 .btn-voltar {
     display: inline-block;
     font-size: 12px;
     padding: 6px 10px;
     margin-top: 8px;
     background: transparent;
-    color: #b89b3c; /* dourado elegante */
+    color: #b89b3c;
+    /* dourado elegante */
     border: 1px solid #b89b3c;
     border-radius: 3px;
     text-decoration: none;
@@ -306,6 +313,7 @@ footer {
     padding: 50px;
     margin-top: 80px;
 }
+
 /* ================================= */
 /* MOBILE AJUSTADO PROFISSIONAL */
 /* ================================= */
@@ -313,7 +321,8 @@ footer {
 @media (max-width: 568px) {
 
     body {
-        padding-top: 50px; /* compensa header fixo */
+        padding-top: 50px;
+        /* compensa header fixo */
     }
 
     header {
@@ -335,14 +344,18 @@ footer {
     }
 
     .logo img {
-        height: 120px; /* proporcional à tela */
+        height: 120px;
+        /* proporcional à tela */
     }
+
     /* ===== MENU ORGANIZADO ===== */
     .menu-links {
         display: flex;
         flex-direction: row;
-        justify-content: center; /* corrigido */
-        align-items: center;     /* corrigido */
+        justify-content: center;
+        /* corrigido */
+        align-items: center;
+        /* corrigido */
         gap: 10px;
         margin-top: 10px;
         flex-wrap: wrap;
@@ -384,19 +397,14 @@ footer {
     section {
         padding: 80px 5%;
     }
+
     .btn-mapa {
         display: inline-block;
-        padding: 10px 22px;
+        padding: 5px 10px;
         background-color: #cba62b;
         color: #000000;
         text-decoration: none;
         border-radius: 5px;
         transition: 0.3s;
-}
-
-    .btn-mapa:hover {
-        background-color: #333;
     }
 }
-
-
