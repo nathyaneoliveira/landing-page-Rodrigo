@@ -352,7 +352,7 @@ footer {
     }
 
     .logo img {
-        height: 160px; /* grande, mas proporcional */
+        height: 250px; /* grande, mas proporcional */
     }
 
     .logo-textos {
@@ -360,7 +360,7 @@ footer {
     }
 
     .logo-nome {
-        font-size: 24px; /* nome bem visível */
+        font-size: 30px; /* nome bem visível */
     }
 
     .logo-sub {
