@@ -377,7 +377,7 @@ footer {
         align-items: horizontal;       /* CORRIGIDO */
         gap: 18px;
         margin-top: 10px;
-          /* permite quebrar linha */
+        flex-wrap: wrap;           /* permite quebrar linha */
     }
 
     .menu-links a {
@@ -389,9 +389,9 @@ footer {
     .btn-parceiro {
         flex-basis: 50%;          /* força ir para linha de baixo */
         text-align: horizontal;       /* CORRIGIDO */
-        margin-top: 15px;
-        padding: 8px 20px;
-        font-size: 13px;
+        margin-top: 5px;
+        padding: 4px 10px;
+        font-size: 10px;
     }
 
     /* HERO AJUSTADO */
