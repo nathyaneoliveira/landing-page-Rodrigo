@@ -290,34 +290,84 @@ footer {
 }
 
 /* Celular */
+/* ============================= */
+/* CELULAR AJUSTADO CORRETAMENTE */
+/* ============================= */
 @media (max-width: 768px) {
 
-    body { padding-top: 180px; }
+    /* Header mais compacto */
+    header {
+        padding: 12px 5%;
+    }
 
+    body {
+        padding-top: 140px; /* reduzido */
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Logo proporcional */
     .logo {
         flex-direction: column;
         text-align: center;
+        gap: 5px;
     }
 
-    .logo img { height: 100px; }
+    .logo img {
+        height: 85px; /* reduzido */
+    }
 
+    .logo-nome {
+        font-size: 18px;
+    }
+
+    .logo-sub {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    /* Menu mais organizado */
+    .menu-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-links a {
+        font-size: 12px;
+    }
+
+    /* Hero proporcional */
     .hero {
-        padding: 120px 20px 80px;
+        padding: 60px 20px 60px; /* reduzido */
         min-height: auto;
     }
 
-    .hero h1 { font-size: 26px; }
-    .hero p { font-size: 15px; }
-
-    .btn-dourado {
-        width: 100%;
-        max-width: 320px;
-        padding: 14px;
-        font-size: 13px;
+    .hero h1 {
+        font-size: 24px;
+        line-height: 1.3;
     }
 
-    section { padding: 70px 5%; }
+    .hero p {
+        font-size: 14px;
+    }
+
+    /* Botão melhor adaptado */
+    .btn-dourado {
+        width: 100%;
+        max-width: 280px;
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
 }
+
 
 /* Celular pequeno */
 @media (max-width: 480px) {
