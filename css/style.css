@@ -376,7 +376,7 @@ footer {
         justify-content: horizontal;   /* CORRIGIDO */
         align-items: horizontal;       /* CORRIGIDO */
         gap: 18px;
-        margin-top: 50px;
+        margin-top: 70px;
         flex-wrap: wrap;           /* permite quebrar linha */
     }
 
@@ -387,7 +387,7 @@ footer {
 
     /* BOTÃO PARCEIRO EMBAIXO DO MENU */
     .btn-parceiro {
-        flex-basis: 50%;          /* força ir para linha de baixo */
+        flex-basis: 0%;          /* força ir para linha de baixo */
         text-align: horizontal;       /* CORRIGIDO */
         margin-top: 5px;
         padding: 4px 8px;
