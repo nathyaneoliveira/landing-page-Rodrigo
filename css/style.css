@@ -376,7 +376,7 @@ footer {
         justify-content: horizontal;   /* CORRIGIDO */
         align-items: horizontal;       /* CORRIGIDO */
         gap: 18px;
-        margin-top: 10px;
+        margin-top: 50px;
         flex-wrap: wrap;           /* permite quebrar linha */
     }
 
