@@ -313,11 +313,11 @@ footer {
 @media (max-width: 568px) {
 
     body {
-        padding-top: 80px; /* compensa header fixo */
+        padding-top: 50px; /* compensa header fixo */
     }
 
     header {
-        padding: 15px 5%;
+        padding: 10px 0%;
     }
 
     .nav-container {
@@ -337,35 +337,25 @@ footer {
     .logo img {
         height: 120px; /* proporcional à tela */
     }
-
-    .logo-nome {
-        font-size: 22px;
-    }
-
-    .logo-sub {
-        font-size: 12px;
-        letter-spacing: 2px;
-    }
-
     /* ===== MENU ORGANIZADO ===== */
     .menu-links {
         display: flex;
         flex-direction: row;
         justify-content: center; /* corrigido */
         align-items: center;     /* corrigido */
-        gap: 15px;
+        gap: 10px;
         margin-top: 10px;
         flex-wrap: wrap;
     }
 
     .menu-links a {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     /* ===== BOTÃO PARCEIRO ===== */
     .btn-parceiro {
         padding: 6px 12px;
-        font-size: 11px;
+        font-size: 10px;
     }
 
     /* HERO AJUSTADO */
@@ -381,7 +371,7 @@ footer {
     }
 
     .hero p {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .btn-dourado {
