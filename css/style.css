@@ -23,7 +23,8 @@ body {
     background: var(--branco);
     color: var(--texto-escuro);
     line-height: 1.6;
-    padding-top: 140px; /* compensação header fixo */
+    padding-top: 140px;
+    /* compensação header fixo */
 }
 
 /* ============================= */
@@ -140,7 +141,7 @@ header {
     padding: 0 20px;
     color: #fff;
     background: linear-gradient(rgba(15, 43, 36, 0.88), rgba(15, 43, 36, 0.88)),
-    url('https://us.123rf.com/450wm/stockstudio44/stockstudio442208/stockstudio44220800009/191115375-tema-da-lei-escrit%C3%B3rio-do-juiz-themis-e-martelo-na-mesa-do-juiz-prateleira-do-livro-no-fundo.jpg?ver=6') center / cover no-repeat;
+        url('https://us.123rf.com/450wm/stockstudio44/stockstudio442208/stockstudio44220800009/191115375-tema-da-lei-escrit%C3%B3rio-do-juiz-themis-e-martelo-na-mesa-do-juiz-prateleira-do-livro-no-fundo.jpg?ver=6') center / cover no-repeat;
 }
 
 .hero h1 {
@@ -262,12 +263,24 @@ footer {
 }
 
 /* ============================= */
+/* BOTÃO HAMBÚRGUER */
+/* ============================= */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ============================= */
 /* RESPONSIVO */
 /* ============================= */
 
 /* Notebook */
 @media (max-width: 1200px) {
-    .hero h1 { font-size: 46px; }
+    .hero h1 {
+        font-size: 46px;
+    }
 }
 
 /* Tablet */
@@ -283,66 +296,87 @@ footer {
         justify-content: center;
     }
 
-    .hero h1 { font-size: 36px; }
-    .hero p { font-size: 16px; }
+    .hero h1 {
+        font-size: 36px;
+    }
 
-    section { padding: 90px 6%; }
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 90px 6%;
+    }
 }
 
-/* Celular */
 /* ============================= */
-/* CELULAR AJUSTADO CORRETAMENTE */
+/* CELULAR - MENU HAMBÚRGUER + AJUSTES PREMIUM */
 /* ============================= */
 @media (max-width: 768px) {
 
-    /* Header mais compacto */
     header {
         padding: 12px 5%;
     }
 
     body {
-        padding-top: 140px; /* reduzido */
+        padding-top: 120px;
     }
 
     .nav-container {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Logo menor */
+    .logo {
+        flex-direction: row;
         gap: 10px;
     }
 
-    /* Logo proporcional */
-    .logo {
-        flex-direction: column;
-        text-align: center;
-        gap: 5px;
-    }
-
     .logo img {
-        height: 85px; /* reduzido */
+        height: 70px;
     }
 
     .logo-nome {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .logo-sub {
-        font-size: 10px;
-        letter-spacing: 1.5px;
+        display: none;
+        /* deixa mais limpo */
     }
 
-    /* Menu mais organizado */
+    /* Ativa hambúrguer */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Menu escondido */
     .menu-links {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--verde-escuro);
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 25px 0;
+        display: none;
     }
 
     .menu-links a {
-        font-size: 12px;
+        font-size: 14px;
+    }
+
+    .menu-links.active {
+        display: flex;
     }
 
     /* Hero proporcional */
     .hero {
-        padding: 60px 20px 60px; /* reduzido */
+        padding: 60px 20px;
         min-height: auto;
     }
 
@@ -355,25 +389,70 @@ footer {
         font-size: 14px;
     }
 
-    /* Botão melhor adaptado */
     .btn-dourado {
         width: 100%;
-        max-width: 280px;
-        padding: 12px;
+        max-width: 260px;
         font-size: 12px;
     }
 
     section {
         padding: 60px 5%;
     }
+
+    /* ===== EQUIPE EM 1 COLUNA ===== */
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .card {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .equipe img {
+        width: 110px;
+        height: 110px;
+        margin-bottom: 15px;
+    }
+
+    .equipe h3 {
+        font-size: 16px;
+    }
+
+    .equipe p {
+        font-size: 13px;
+    }
 }
 
-
-/* Celular pequeno */
+/* ============================= */
+/* CELULAR PEQUENO */
+/* ============================= */
 @media (max-width: 480px) {
 
-    .logo img { height: 80px; }
-    .logo-nome { font-size: 18px; }
-    .menu-links a { font-size: 12px; }
-    .hero h1 { font-size: 22px; }
+    .logo img {
+        height: 60px;
+    }
+
+    .logo-nome {
+        font-size: 14px;
+    }
+
+    .menu-links a {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .equipe img {
+        width: 95px;
+        height: 95px;
+    }
 }
