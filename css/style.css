@@ -381,7 +381,7 @@ footer {
     }
 
     .menu-links a {
-        font-size: 13px;
+        font-size: 5px;
         white-space: nowrap;
     }
 
@@ -391,7 +391,7 @@ footer {
         text-align: horizontal;       /* CORRIGIDO */
         margin-top: 5px;
         padding: 4px 10px;
-        font-size: 10px;
+        font-size: 5px;
     }
 
     /* HERO AJUSTADO */
