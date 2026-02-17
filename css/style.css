@@ -313,7 +313,7 @@ footer {
 @media (max-width: 568px) {
 
     body {
-        padding-top: 100px; /* compensa header fixo */
+        padding-top: 80px; /* compensa header fixo */
     }
 
     header {
