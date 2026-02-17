@@ -330,7 +330,7 @@ footer {
 @media (max-width: 768px) {
 
     body {
-        padding-top: 260px; /* compensa header maior */
+        padding-top: 200px; /* compensa header maior */
     }
 
     header {
@@ -348,7 +348,7 @@ footer {
     .logo {
         flex-direction: column;
         align-items: center;
-        gap: 8px;
+        gap: 5px;
     }
 
     .logo img {
