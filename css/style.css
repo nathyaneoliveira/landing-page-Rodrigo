@@ -130,14 +130,14 @@ header {
 /* HERO */
 /* ============================= */
 .hero {
-    height: 150vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 20px;
-    margin-top: 40px;
+    padding: 0 10px;
+    margin-top: 20px;
     color: #fff;
     background: linear-gradient(rgba(15, 43, 36, 0.88), rgba(15, 43, 36, 0.88)), url('https://us.123rf.com/450wm/stockstudio44/stockstudio442208/stockstudio44220800009/191115375-tema-da-lei-escrit%C3%B3rio-do-juiz-themis-e-martelo-na-mesa-do-juiz-prateleira-do-livro-no-fundo.jpg?ver=6') center / cover no-repeat;
 }
