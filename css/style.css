@@ -247,8 +247,8 @@ section {
 /* EQUIPE */
 /* ============================= */
 .equipe img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     display: block;
     margin: 0 auto 25px;
@@ -256,51 +256,43 @@ section {
 }
 
 /* ============================= */
-/* FORMULÁRIO PREMIUM */
+/* FORMULÁRIO RESPONSIVO */
 /* ============================= */
-.formulario {
-    max-width: 650px;
-    margin: 0 auto;
-}
 
-.formulario input,
-.formulario textarea,
-.formulario select {
-    width: 100%;
-    padding: 16px;
-    margin-bottom: 22px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-family: inherit;
-    font-size: 14px;
-    transition: 0.3s;
-}
+@media (max-width: 768px) {
 
-.formulario input:focus,
-.formulario textarea:focus,
-.formulario select:focus {
-    border-color: var(--dourado);
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
-}
+    .formulario {
+        max-width: 100%;
+        padding: 0 20px;
+        /* respiro lateral */
+    }
 
-.btn-voltar {
-    display: inline-block;
-    font-size: 12px;
-    padding: 6px 10px;
-    margin-top: 8px;
-    background: transparent;
-    color: #b89b3c;
-    /* dourado elegante */
-    border: 1px solid #b89b3c;
-    border-radius: 3px;
-    text-decoration: none;
-    transition: 0.3s;
-}
+    .formulario input,
+    .formulario textarea,
+    .formulario select {
+        padding: 14px;
+        font-size: 16px;
+        /* evita zoom automático no iPhone */
+        margin-bottom: 18px;
+    }
 
-.btn-voltar:hover {
-    background: #b89b3c;
-    color: #fff;
+    .formulario textarea {
+        min-height: 120px;
+    }
+
+    .btn-dourado {
+        width: 100%;
+        /* botão principal ocupa toda largura */
+        text-align: center;
+    }
+
+    .btn-voltar {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 13px;
+        margin-top: 12px;
+    }
 }
 
 /* ============================= */
