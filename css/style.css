@@ -330,7 +330,7 @@ footer {
 @media (max-width: 768px) {
 
     body {
-        padding-top: 200px; /* compensa header maior */
+        padding-top: 100px; /* compensa header maior */
     }
 
     header {
@@ -355,7 +355,7 @@ footer {
         height: 300px; /* grande, mas proporcional */
     }
 
-    /**.logo-textos {
+    .logo-textos {
         text-align: center;
     }
 
@@ -363,11 +363,11 @@ footer {
         font-size: 30px; /* nome bem visível */
     }
 
-    /**.logo-sub {
+    .logo-sub {
         font-size: 13px;
         letter-spacing: 3px;
     }
-    **/
+
 
 }
     /* MENU EM UMA LINHA */
