@@ -42,7 +42,7 @@ header {
 .nav-container {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 20px;
 }
 
 /* ============================= */
@@ -243,8 +243,8 @@ section {
 /* EQUIPE */
 /* ============================= */
 .equipe img {
-    width: 180px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     display: block;
     margin: 0 auto 25px;
@@ -296,23 +296,6 @@ section {
     color: #fff;
 }
 
-
-/* ============================= */
-/* WHATSAPP FLOAT */
-/* ============================= */
-.whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background: #25D366;
-    color: #fff;
-    padding: 15px 22px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 500;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
-
 /* ============================= */
 /* FOOTER */
 /* ============================= */
@@ -348,11 +331,11 @@ footer {
     .logo {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 6px;
     }
 
     .logo img {
-        height: 100px; /* proporcional à tela */
+        height: 120px; /* proporcional à tela */
     }
 
     .logo-nome {
@@ -384,8 +367,6 @@ footer {
         padding: 6px 12px;
         font-size: 11px;
     }
-
-}
 
     /* HERO AJUSTADO */
     .hero {
@@ -425,10 +406,7 @@ footer {
 
     .btn-mapa:hover {
         background-color: #333;
+    }
 }
-body {
-    padding-top: 140px;
-}
-
 
 
