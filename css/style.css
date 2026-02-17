@@ -324,75 +324,69 @@ footer {
     margin-top: 80px;
 }
 /* ================================= */
-/* MOBILE E TABLET ORGANIZADO */
+/* MOBILE AJUSTADO PROFISSIONAL */
 /* ================================= */
 
 @media (max-width: 568px) {
 
     body {
-        padding-top: 80px; /* compensa header maior */
+        padding-top: 180px; /* compensa header fixo */
     }
 
     header {
-        padding: 20px 5%;
+        padding: 15px 5%;
     }
 
     .nav-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
     }
 
-    /* LOGO GRANDE */
+    /* ===== LOGO PROPORCIONAL ===== */
     .logo {
         flex-direction: column;
         align-items: center;
-        gap: 5px;
+        gap: 6px;
     }
 
     .logo img {
-        height: 300px; /* grande, mas proporcional */
-    }
-
-    .logo-textos {
-        text-align: center;
+        height: 120px; /* proporcional à tela */
     }
 
     .logo-nome {
-        font-size: 30px; /* nome bem visível */
+        font-size: 22px;
     }
 
     .logo-sub {
-        font-size: 13px;
-        letter-spacing: 3px;
+        font-size: 12px;
+        letter-spacing: 2px;
     }
 
-
-}
-    /* MENU EM UMA LINHA */
+    /* ===== MENU ORGANIZADO ===== */
     .menu-links {
         display: flex;
         flex-direction: row;
-        justify-content: horizontal;   /* CORRIGIDO */
-        align-items: horizontal;       /* CORRIGIDO */
-        gap: 18px;
-        margin-top: 70px;
-        flex-wrap: wrap;           /* permite quebrar linha */
+        justify-content: center; /* corrigido */
+        align-items: center;     /* corrigido */
+        gap: 15px;
+        margin-top: 10px;
+        flex-wrap: wrap;
     }
 
     .menu-links a {
-        font-size: 15px;
-        white-space: nowrap;
+        font-size: 13px;
     }
 
-    /* BOTÃO PARCEIRO EMBAIXO DO MENU */
+    /* ===== BOTÃO PARCEIRO ===== */
     .btn-parceiro {
-        flex-basis: auto;     /* remove quebra forçada */
-        margin-top: 0;        /* remove espaço extra */
-        padding: 8px 14px;
-        font-size: 12px;
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+
 }
+
 
 
     /* HERO AJUSTADO */
