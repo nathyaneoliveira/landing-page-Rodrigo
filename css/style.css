@@ -330,46 +330,45 @@ footer {
 @media (max-width: 768px) {
 
     body {
-        padding-top: 95px;
+        padding-top: 260px; /* compensa header maior */
     }
 
     header {
-        padding: 10px 5%;
+        padding: 20px 5%;
     }
 
     .nav-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 5px;
+        gap: 10px;
     }
 
-    /* LOGO MAIOR */
-.logo {
-    flex-direction: column;
-    align-items: center;
-    gap: 4px; /* menor espaço entre imagem e textos */
+    /* LOGO GRANDE */
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .logo img {
+        height: 160px; /* grande, mas proporcional */
+    }
+
+    .logo-textos {
+        text-align: center;
+    }
+
+    .logo-nome {
+        font-size: 24px; /* nome bem visível */
+    }
+
+    .logo-sub {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+
 }
-
-.logo img {
-    height: 90px; /* aumenta a logo */
-}
-
-.logo-textos {
-    margin-top: 0; /* remove espaço negativo estranho */
-    text-align: center;
-}
-
-.logo-nome {
-    font-size: 18px; /* maior */
-}
-
-.logo-sub {
-    font-size: 11px;
-    letter-spacing: 2px; /* menos espaçamento exagerado */
-}
-
-
     /* MENU EM UMA LINHA */
     .menu-links {
         display: flex;
@@ -421,7 +420,6 @@ footer {
     section {
         padding: 80px 5%;
     }
-}
     .btn-mapa {
         display: inline-block;
         padding: 10px 22px;
