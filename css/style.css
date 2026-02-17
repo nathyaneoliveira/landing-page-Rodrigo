@@ -345,29 +345,30 @@ footer {
     }
 
     /* LOGO MAIOR */
-    .logo {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
+.logo {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px; /* menor espaço entre imagem e textos */
+}
 
-    .logo img {
-        height: 20px;
-    }
+.logo img {
+    height: 90px; /* aumenta a logo */
+}
 
-    .logo-textos {
-        margin-top: -10px;
-        text-align: center;
-    }
+.logo-textos {
+    margin-top: 0; /* remove espaço negativo estranho */
+    text-align: center;
+}
 
-    .logo-nome {
-        font-size: 10px;
-    }
+.logo-nome {
+    font-size: 18px; /* maior */
+}
 
-    .logo-sub {
-        font-size: 10px;
-        letter-spacing: 3px;
-    }
+.logo-sub {
+    font-size: 11px;
+    letter-spacing: 2px; /* menos espaçamento exagerado */
+}
+
 
     /* MENU EM UMA LINHA */
     .menu-links {
