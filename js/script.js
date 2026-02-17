@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const NUMERO_WHATSAPP = "5583988731369"; // DDI + DDD + número
+    const NUMERO_WHATSAPP = "5583998565071"; // DDI + DDD + número
 
     const form = document.getElementById("formContato");
     if (!form) return;
@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const texto =
             "Olá, gostaria de atendimento jurídico.\n\n" +
-            "📌 Nome: " + nome + "\n" +
-            "📧 E-mail: " + email + "\n" +
-            "⚖ Área de Interesse: " + area + "\n\n" +
-            "📝 Mensagem:\n" + mensagem;
+            "Nome: " + nome + "\n" +
+            "E-mail: " + email + "\n" +
+            "Área de Interesse: " + area + "\n\n" +
+            "Mensagem:\n" + mensagem;
 
         const link = "https://wa.me/" + NUMERO_WHATSAPP + "?text=" + encodeURIComponent(texto);
 
