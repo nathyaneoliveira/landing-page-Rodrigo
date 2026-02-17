@@ -388,7 +388,7 @@ footer {
     /* BOTÃO PARCEIRO EMBAIXO DO MENU */
     .btn-parceiro {
         flex-basis: 100%;          /* força ir para linha de baixo */
-        text-align: center;
+        text-align: horizontal;       /* CORRIGIDO */
         margin-top: 15px;
         padding: 8px 20px;
         font-size: 13px;
