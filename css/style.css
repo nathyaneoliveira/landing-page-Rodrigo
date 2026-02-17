@@ -130,7 +130,7 @@ header {
 /* HERO */
 /* ============================= */
 .hero {
-    height: 120vh; 
+    height: 100vh; 
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
@@ -148,7 +148,7 @@ header {
 .hero p { 
     max-width: 750px; 
     margin-bottom: 40px; 
-    font-size: 18px; 
+    font-size: 20px; 
     opacity: 0.95; }
 /* ============================= */
 /* BOTÃO PRINCIPAL */
