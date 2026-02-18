@@ -491,21 +491,26 @@ section {
 /* FOOTER */
 /* ============================= */
 
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
 footer {
     background: var(--verde-escuro);
     color: #ffffff;
     text-align: center;
-    padding: 35px 8% 15px;
+    padding: 30px 8% 15px;
 }
 
+/* Texto automático e proporcional */
 footer p {
     margin-bottom: 10px;
-    font-size: clamp(5px, 1vw, 10px);
+    font-size: clamp(12px, 1vw, 15px);
     opacity: 0.9;
     line-height: 1.6;
 }
 
-
+/* Links */
 footer a {
     color: var(--dourado);
     text-decoration: none;
@@ -515,30 +520,18 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
 
 /* ============================= */
 /* FOOTER Responsivo*/
 /* ============================= */
-footer {
-    background: var(--verde-escuro);
-    color: #ffffff;
-    text-align: center;
-    padding: 35px 8% 15px;
-}
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 5% 10px;
+    }
 
-footer p {
-    margin-bottom: 15px;
-    font-size: 14px;   /* tamanho correto */
-    opacity: 0.9;
-    line-height: 1.6;
-}
-
-footer a {
-    color: var(--dourado);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    footer p {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
 }
