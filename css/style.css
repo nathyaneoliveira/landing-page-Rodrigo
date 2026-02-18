@@ -260,7 +260,7 @@ section {
 /* ============================= */
 
 .secao-formulario {
-    padding: 120px 8% 40px;
+    padding: 300px 8% 1000px;
     background: linear-gradient(rgba(15, 43, 36, 0.95),
             rgba(15, 43, 36, 0.95)),
         url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80');
@@ -369,7 +369,7 @@ section {
 @media (max-width: 768px) {
 
     .secao-formulario {
-        padding: 120px 5% 30px;
+        padding: 200px 5% 50px;
     }
 
     .formulario {
