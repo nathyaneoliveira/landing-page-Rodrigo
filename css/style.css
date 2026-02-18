@@ -258,47 +258,112 @@ section {
 /* ============================= */
 /* SEÇÃO FORMULÁRIO */
 /* ============================= */
-.campo {
-    position: relative;
-    margin-bottom: 28px;
+
+.secao-formulario {
+    padding: 180px 8% 120px;
+    background: linear-gradient(rgba(15, 43, 36, 0.95),
+            rgba(15, 43, 36, 0.95)),
+        url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
 }
 
-.campo input,
-.campo textarea,
-.campo select {
-    width: 100%;
-    padding: 18px 15px 8px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #f9f9f9;
-    font-size: 15px;
-}
-
-.campo label {
-    position: absolute;
-    left: 15px;
-    top: 16px;
-    font-size: 14px;
-    color: #777;
-    transition: 0.3s;
-    pointer-events: none;
-}
-
-.campo.ativo label {
-    top: 6px;
-    font-size: 11px;
+/* Título mais elegante */
+.secao-formulario .titulo-secao {
     color: var(--dourado);
-}
-.formulario {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 0.6s ease;
+    font-size: 42px;
+    margin-bottom: 60px;
 }
 
-.formulario.aparecer {
-    opacity: 1;
-    transform: translateY(0);
+/* ============================= */
+/* CARD DO FORMULÁRIO PROFISSIONAL */
+/* ============================= */
+
+.formulario {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 70px 60px;
+    background: #ffffff;
+    border-radius: 16px;
+
+    /* Sombra mais elegante e realista */
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12),
+        0 4px 10px rgba(0, 0, 0, 0.04);
+
+    /* Borda superior refinada */
+    position: relative;
+    overflow: hidden;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Linha dourada premium (degradê discreto) */
+.formulario::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg,
+            #b8962e,
+            var(--dourado),
+            #b8962e);
+}
+
+
+/* ============================= */
+/* CAMPOS MAIS PROFISSIONAIS */
+/* ============================= */
+/* ============================= */
+/* CAMPOS ESCUROS PROFISSIONAIS */
+/* ============================= */
+
+.formulario input,
+.formulario textarea,
+.formulario select {
+    width: 100%;
+    padding: 14px 18px;
+    margin: 12px 0;
+
+    background: #0f2b24; /* verde institucional */
+    color: #ffffff;
+
+    border: 1.5px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Placeholder mais elegante */
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+/* Focus sofisticado */
+.formulario input:focus,
+.formulario textarea:focus,
+.formulario select:focus {
+    outline: none;
+    border-color: var(--dourado);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.25);
+}
+
+/* ============================= */
+/* BOTÕES ORGANIZADOS */
+/* ============================= */
+
+.botoes-form {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 /* ============================= */
 /* RESPONSIVO */
