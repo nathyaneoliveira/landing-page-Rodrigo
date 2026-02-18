@@ -260,7 +260,7 @@ section {
 /* ============================= */
 
 .secao-formulario {
-    padding: 120px 8% 40px;
+    padding: 120px 8% 30px;
 
     background: linear-gradient(
         rgba(15, 43, 36, 0.95),
@@ -372,7 +372,7 @@ section {
 
 @media (max-width: 768px) {
     .secao-formulario {
-        padding: 120px 5% 30px;
+        padding: 140px 5% 50px;
     }
 }
 
