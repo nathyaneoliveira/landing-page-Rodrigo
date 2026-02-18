@@ -283,7 +283,7 @@ section {
     max-width: 720px;
     margin: 0 auto;
     padding: 70px 60px;
-    background: #ffffff;
+    background: #3f9e42;
     border-radius: 16px;
 
     /* Sombra mais elegante e realista */
@@ -312,13 +312,6 @@ section {
             #b8962e);
 }
 
-/* Hover mais sutil e elegante */
-.formulario:hover {
-    transform: translateY(-3px);
-    box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.16),
-        0 6px 14px rgba(0, 0, 0, 0.06);
-}
 
 /* ============================= */
 /* CAMPOS MAIS PROFISSIONAIS */
