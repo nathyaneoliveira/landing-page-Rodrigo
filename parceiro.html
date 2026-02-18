@@ -43,13 +43,16 @@
                 Seja um Parceiro
             </h2>
 
-            <form class="formulario">
+            <form class="formulario" id="formContato">
 
-                <input type="text" placeholder="Nome completo" required>
-                <input type="email" placeholder="E-mail profissional" required>
-                <input type="text" placeholder="Cidade / Estado" required>
+                <input type="text" id="nome" placeholder="Nome completo"
+                    required>
+                <input type="email" id="email" placeholder="E-mail profissional"
+                    required>
+                <input type="text" id="cidade" placeholder="Cidade / Estado"
+                    required>
 
-                <select required>
+                <select id="area" required>
                     <option value>Área de atuação</option>
                     <option>Direito Empresarial</option>
                     <option>Direito Tributário</option>
@@ -57,14 +60,13 @@
                     <option>Outras áreas</option>
                 </select>
 
-                <textarea rows="5"
+                <textarea id="mensagem" rows="5"
                     placeholder="Descreva sua experiência profissional"></textarea>
 
                 <div class="botoes-form">
                     <button type="submit" class="btn-dourado">
                         Enviar Solicitação
                     </button>
-
                 </div>
 
             </form>
