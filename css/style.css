@@ -495,19 +495,19 @@ footer {
     background: var(--verde-escuro);
     color: #ffffff;
     text-align: center;
-    padding: 60px 8% 40px;
+    padding: 30px 8% 20px;
 }
 
 footer p {
-    margin-bottom: 10px;
-    font-size: 5px;
+    margin-bottom: 50px;
+    font-size: 10px;
     opacity: 0.9;
 }
 
 footer a {
     color: var(--dourado);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 200;
 }
 
 footer a:hover {
