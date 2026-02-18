@@ -499,11 +499,12 @@ footer {
 }
 
 footer p {
-    margin-bottom: 15px;
-    font-size: 14px;   /* tamanho correto */
+    margin-bottom: 12px;
+    font-size: clamp(13px, 1vw, 15px);
     opacity: 0.9;
     line-height: 1.6;
 }
+
 
 footer a {
     color: var(--dourado);
