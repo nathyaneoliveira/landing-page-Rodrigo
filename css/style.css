@@ -312,10 +312,6 @@ section {
             #b8962e);
 }
 
-
-/* ============================= */
-/* CAMPOS MAIS PROFISSIONAIS */
-/* ============================= */
 /* ============================= */
 /* CAMPOS ESCUROS PROFISSIONAIS */
 /* ============================= */
@@ -327,10 +323,10 @@ section {
     padding: 14px 18px;
     margin: 12px 0;
 
-    background: #0f2b24; /* verde institucional */
+    background: #979e9c; /* verde institucional */
     color: #ffffff;
 
-    border: 1.5px solid rgba(255,255,255,0.15);
+    border: 1.5px solid rgba(0, 0, 0, 0.15);
     border-radius: 10px;
 
     font-size: 15px;
