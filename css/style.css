@@ -209,7 +209,7 @@ header {
 /* SECTIONS */
 /* ============================= */
 section {
-    padding: 120px 8%;
+    padding: 120px 8% 60px;
 }
 
 .titulo-secao {
@@ -260,10 +260,14 @@ section {
 /* ============================= */
 
 .secao-formulario {
-    padding: 300px 8% 1000px;
-    background: linear-gradient(rgba(15, 43, 36, 0.95),
-            rgba(15, 43, 36, 0.95)),
-        url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80');
+    padding: 120px 8% 40px;
+
+    background: linear-gradient(
+        rgba(15, 43, 36, 0.95),
+        rgba(15, 43, 36, 0.95)
+    ),
+    url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80');
+
     background-size: cover;
     background-position: center;
 }
@@ -367,10 +371,10 @@ section {
 /* ============================= */
 
 @media (max-width: 768px) {
-
     .secao-formulario {
-        padding: 200px 5% 50px;
+        padding: 120px 5% 30px;
     }
+}
 
     .formulario {
         padding: 35px 20px;
@@ -389,7 +393,6 @@ section {
     .secao-formulario .titulo-secao {
         font-size: 28px;
     }
-}
 
 
 /* ================================= */
