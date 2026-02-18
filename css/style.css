@@ -323,7 +323,8 @@ section {
     padding: 14px 18px;
     margin: 12px 0;
 
-    background: #0f2b24; /* verde institucional */
+    background: #0f2b24;
+    /* verde institucional */
     color: #ffffff;
 
     border: 1.5px solid rgba(0, 0, 0, 0.15);
@@ -336,7 +337,7 @@ section {
 /* Placeholder mais elegante */
 .formulario input::placeholder,
 .formulario textarea::placeholder {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* Focus sofisticado */
@@ -484,4 +485,31 @@ section {
         border-radius: 5px;
         transition: 0.3s;
     }
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+    background: var(--verde-escuro);
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 8% 40px;
+}
+
+footer p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+footer a {
+    color: var(--dourado);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
