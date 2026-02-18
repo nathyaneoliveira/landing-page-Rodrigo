@@ -495,12 +495,12 @@ footer {
     background: var(--verde-escuro);
     color: #ffffff;
     text-align: center;
-    padding: 30px 8% 20px;
+    padding: 20px 8% 10px;
 }
 
 footer p {
-    margin-bottom: 20px;
-    font-size: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
     opacity: 0.9;
 }
 
