@@ -260,7 +260,7 @@ section {
 /* ============================= */
 
 .secao-formulario {
-    padding: 180px 8% 120px;
+    padding: 200px 8% 120px;
     background: linear-gradient(rgba(15, 43, 36, 0.95),
             rgba(15, 43, 36, 0.95)),
         url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80');
@@ -499,8 +499,8 @@ footer {
 }
 
 footer p {
-    margin-bottom: 20px;
-    font-size: 10px;
+    margin-bottom: 30px;
+    font-size: 120px;
     opacity: 0.9;
 }
 
