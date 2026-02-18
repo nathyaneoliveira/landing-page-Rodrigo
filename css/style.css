@@ -495,7 +495,7 @@ footer {
     background: var(--verde-escuro);
     color: #ffffff;
     text-align: center;
-    padding: 20px 8% 10px;
+    padding: 20px 8%;
 }
 
 footer p {
@@ -507,7 +507,7 @@ footer p {
 footer a {
     color: var(--dourado);
     text-decoration: none;
-    font-weight: 200;
+    font-weight: 500;
 }
 
 footer a:hover {
