@@ -495,19 +495,47 @@ footer {
     background: var(--verde-escuro);
     color: #ffffff;
     text-align: center;
-    padding: 40px 8% 20px;
+    padding: 35px 8% 15px;
 }
 
 footer p {
-    margin-bottom: 30px;
-    font-size: 120px;
+    margin-bottom: 15px;
+    font-size: 14px;   /* tamanho correto */
     opacity: 0.9;
+    line-height: 1.6;
 }
 
 footer a {
     color: var(--dourado);
     text-decoration: none;
-    font-weight: 100;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ============================= */
+/* FOOTER Responsivo*/
+/* ============================= */
+footer {
+    background: var(--verde-escuro);
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 8% 15px;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-size: 14px;   /* tamanho correto */
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+footer a {
+    color: var(--dourado);
+    text-decoration: none;
+    font-weight: 500;
 }
 
 footer a:hover {
