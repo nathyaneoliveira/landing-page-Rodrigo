@@ -1091,3 +1091,49 @@ section,
         font-size: 13px;
     }
 }
+
+/* =========================
+   FOOTER ABAIXO DO CONTEÚDO
+========================= */
+
+footer#localizacao {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    margin-top: 80px !important;
+    box-sizing: border-box !important;
+}
+
+/* O conteúdo do Sobre ocupa uma única seção */
+.sobre {
+    display: block !important;
+    width: 100% !important;
+}
+
+/* Container do Sobre */
+.sobre-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+/* Texto e carrossel */
+.sobre-texto {
+    box-sizing: border-box;
+}
+
+.sobre-carrossel {
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Evita elementos flutuando ao lado do footer */
+.sobre::after {
+    content: "";
+    display: block;
+    clear: both;
+}
