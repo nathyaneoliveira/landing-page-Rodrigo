@@ -799,43 +799,41 @@ section {
     opacity: 0.9;
 }
 
+/* =========================
+   CORREÇÃO DO FOOTER
+========================= */
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
-footer {
-    background: var(--verde-escuro);
-
-    color: #fff;
-
-    text-align: center;
-
-    padding: 30px 8% 15px;
+footer#localizacao {
+    width: 100%;
+    clear: both;
+    display: block;
+    position: relative;
+    margin-top: 60px;
+    box-sizing: border-box;
 }
 
-footer p {
-    margin-bottom: 10px;
-
-    font-size: clamp(12px, 1vw, 15px);
-
-    opacity: 0.9;
-
-    line-height: 1.6;
+/* Garante que o conteúdo principal termine antes do rodapé */
+main,
+section,
+.sobre,
+.sobre-container,
+.sobre-carrossel {
+    box-sizing: border-box;
 }
 
-footer a {
-    color: var(--dourado);
-
-    text-decoration: none;
-
-    font-weight: 500;
+.sobre {
+    width: 100%;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.sobre-container {
+    width: 100%;
 }
 
+/* Impede que o carrossel "puxe" o footer para o lado */
+.sobre-carrossel {
+    width: 100%;
+    position: relative;
+}
 
 /* =========================================================
    RESPONSIVO — TABLET
