@@ -741,78 +741,6 @@ section {
 
 
 /* =========================================================
-   MODAL
-   ========================================================= */
-
-.modal {
-    position: fixed;
-    inset: 0;
-    z-index: 2000;
-
-    display: none;
-    justify-content: center;
-    align-items: flex-start;
-
-    padding: 120px 20px 40px;
-
-    background: rgba(15, 43, 36, 0.65);
-}
-
-.modal-conteudo {
-    position: relative;
-    width: min(760px, 100%);
-
-    padding: 40px 30px 30px;
-
-    background: linear-gradient(
-        135deg,
-        rgba(15, 43, 36, 0.97),
-        rgba(30, 90, 77, 0.97)
-    );
-
-    border: 2px solid var(--dourado);
-    border-radius: 18px;
-
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
-
-    color: #fff;
-}
-
-.modal-conteudo h2 {
-    margin-bottom: 16px;
-
-    color: #fff;
-    font-size: clamp(28px, 3vw, 36px);
-}
-
-.modal-conteudo p {
-    color: rgba(255, 255, 255, 0.92);
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-.modal-fechar {
-    position: absolute;
-    top: 16px;
-    right: 18px;
-
-    border: none;
-    background: transparent;
-
-    color: #fff;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
-
-    transition: color 0.2s ease;
-}
-
-.modal-fechar:hover {
-    color: var(--dourado);
-}
-
-
-/* =========================================================
    EQUIPE
    ========================================================= */
 
@@ -969,9 +897,9 @@ section {
 .formulario select {
     width: 100%;
 
-    padding: 14px 18px;
+    padding: 10px 12px;
 
-    margin: 12px 0;
+    margin: 8px 0;
 
     background: var(--verde-escuro);
 
@@ -979,9 +907,9 @@ section {
 
     border: 1.5px solid rgba(0, 0, 0, 0.15);
 
-    border-radius: 10px;
+    border-radius: 8px;
 
-    font-size: 15px;
+    font-size: 14px;
 
     transition: all 0.3s ease;
 }
@@ -1010,11 +938,11 @@ section {
 .botoes-form {
     display: flex;
 
-    gap: 30px;
+    gap: 20px;
 
-    margin-top: 40px;
+    margin-top: 18px;
 
-    justify-content: space-between;
+    justify-content: center;
 
     align-items: center;
 }
@@ -1065,7 +993,7 @@ footer#localizacao {
 
     margin: 0;
 
-    padding: 60px 8% 30px;
+    padding: 30px 8% 20px;
 
     background: var(--verde-escuro);
 
@@ -1080,8 +1008,20 @@ footer#localizacao p {
     margin-bottom: 20px;
 }
 
+.footer-localizacao {
+    margin-bottom: 10px !important;
+
+    font-size: 12px;
+    line-height: 1.2;
+}
+
 footer#localizacao .btn-mapa {
     margin-bottom: 10px;
+    font-size: 11px;
+}
+
+footer#localizacao .copyright {
+    font-size: 11px;
 }
 
 /* =========================================================

@@ -39,9 +39,12 @@
 
                 <a href="#localizacao">Localização</a>
 
-                <a href="parceiro.html" class="btn-parceiro">
+                <button
+                    type="button"
+                    class="btn-parceiro abrir-formulario"
+                    data-form="parceiro">
                     Seja um Parceiro
-                </a>
+                </button>
 
             </nav>
 
@@ -68,9 +71,12 @@
                 segurança jurídica e atendimento próximo ao cliente.
             </p>
 
-            <a href="contato.html" class="btn-dourado">
+            <button
+                type="button"
+                class="btn-dourado abrir-formulario"
+                data-form="contato">
                 Agendar Consultoria
-            </a>
+            </button>
 
         </section>
 
@@ -786,10 +792,8 @@
 
         <div class="footer-conteudo">
 
-            <p>
-                Praça Padre João, 20 - Centro<br>
-                Mamanguape/PB - CEP 58.280-000<br>
-                Atuação em todo território nacional.
+            <p class="footer-localizacao">
+                Praça Padre João, 20 - Centro • Mamanguape/PB - CEP 58.280-000 • Atuação em todo território nacional.
             </p>
 
             <a
@@ -808,6 +812,26 @@
 
     </footer>
 
+
+    <!-- ================= MODAL DE FORMULÁRIO ================= -->
+
+    <div id="formModal" class="form-modal">
+
+        <div class="form-modal-conteudo">
+
+            <button
+                type="button"
+                class="modal-fechar"
+                onclick="fecharFormulario()"
+                aria-label="Fechar formulário">
+                ×
+            </button>
+
+            <div id="formModalBody"></div>
+
+        </div>
+
+    </div>
 
     <!-- ================= MODAL ================= -->
 

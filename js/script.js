@@ -7,6 +7,171 @@ document.addEventListener("DOMContentLoaded", function () {
     const NUMERO_CONTATO = "5583988731369";
     const NUMERO_PARCERIA = "5583998565071";
 
+    const FORMULARIOS = {
+        contato: {
+            title: "Agendar Consultoria",
+            formId: "formContato",
+            html: `
+                <h2 class="titulo-secao">Agendar Consultoria</h2>
+                <form id="formContato" class="formulario">
+                    <input type="text" id="nome" placeholder="Nome completo" required>
+                    <input type="email" id="email" placeholder="E-mail" required>
+                    <select id="area" required>
+                        <option value>Selecione a área de interesse</option>
+                        <option>Direito Empresarial</option>
+                        <option>Direito Tributário</option>
+                        <option>Direito Civil</option>
+                        <option>Outro assunto</option>
+                    </select>
+                    <textarea id="mensagem" rows="5" placeholder="Descreva brevemente sua necessidade"></textarea>
+                    <div class="botoes-form">
+                        <button type="submit" class="btn-dourado">
+                            Solicitar Atendimento
+                        </button>
+                    </div>
+                </form>
+                <div class="form-modal-localizacao">
+                    <div class="form-modal-map-wrap">
+                        <iframe
+                            src="https://www.google.com/maps?q=-6.838925,-35.125210&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <a
+                        href="https://www.google.com/maps?q=-6.838925,-35.125210"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn-mapa form-modal-btn-localizacao">
+                        Ver localização
+                    </a>
+                </div>
+            `
+        },
+        parceiro: {
+            title: "Seja um Parceiro",
+            formId: "formParceria",
+            html: `
+                <h2 class="titulo-secao">Seja um Parceiro</h2>
+                <form id="formParceria" class="formulario">
+                    <input type="text" id="nome" placeholder="Nome completo" required>
+                    <input type="email" id="email" placeholder="E-mail profissional" required>
+                    <input type="text" id="cidade" placeholder="Cidade / Estado" required>
+                    <select id="area" required>
+                        <option value>Área de atuação</option>
+                        <option>Direito Empresarial</option>
+                        <option>Direito Tributário</option>
+                        <option>Direito Civil</option>
+                        <option>Outras áreas</option>
+                    </select>
+                    <textarea id="mensagem" rows="5" placeholder="Descreva sua experiência profissional"></textarea>
+                    <div class="botoes-form">
+                        <button type="submit" class="btn-dourado">
+                            Enviar Solicitação
+                        </button>
+                    </div>
+                </form>
+                <div class="form-modal-localizacao">
+                    <div class="form-modal-map-wrap">
+                        <iframe
+                            src="https://www.google.com/maps?q=-6.838925,-35.125210&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <a
+                        href="https://www.google.com/maps?q=-6.838925,-35.125210"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn-mapa form-modal-btn-localizacao">
+                        Ver localização
+                    </a>
+                </div>
+            `
+        }
+    };
+
+    const formModal = document.getElementById("formModal");
+    const formModalBody = document.getElementById("formModalBody");
+
+    function abrirFormulario(tipo) {
+        if (!formModal || !formModalBody || !FORMULARIOS[tipo]) return;
+
+        formModalBody.innerHTML = FORMULARIOS[tipo].html;
+        formModal.style.display = "flex";
+
+        const form = document.getElementById(FORMULARIOS[tipo].formId);
+
+        if (form) {
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                if (tipo === "contato") {
+                    const nome = document.getElementById("nome")?.value.trim() || "";
+                    const email = document.getElementById("email")?.value.trim() || "";
+                    const area = document.getElementById("area")?.value || "";
+                    const mensagem = document.getElementById("mensagem")?.value.trim() || "";
+
+                    const texto =
+                        "Olá, gostaria de atendimento jurídico.\n\n" +
+                        "Nome: " + nome + "\n" +
+                        "E-mail: " + email + "\n" +
+                        "Área de Interesse: " + area + "\n\n" +
+                        "Mensagem:\n" + mensagem;
+
+                    const link = "https://wa.me/" + NUMERO_CONTATO + "?text=" + encodeURIComponent(texto);
+                    window.open(link, "_blank");
+                } else {
+                    const nome = document.getElementById("nome")?.value.trim() || "";
+                    const email = document.getElementById("email")?.value.trim() || "";
+                    const cidade = document.getElementById("cidade")?.value.trim() || "";
+                    const area = document.getElementById("area")?.value || "";
+                    const mensagem = document.getElementById("mensagem")?.value.trim() || "";
+
+                    const texto =
+                        "Olá, gostaria de parceria jurídica.\n\n" +
+                        "Nome: " + nome + "\n" +
+                        "E-mail: " + email + "\n" +
+                        "Cidade/Estado: " + cidade + "\n" +
+                        "Área de Atuação: " + area + "\n\n" +
+                        "Experiência:\n" + mensagem;
+
+                    const link = "https://wa.me/" + NUMERO_PARCERIA + "?text=" + encodeURIComponent(texto);
+                    window.open(link, "_blank");
+                }
+
+                fecharFormulario();
+                form.reset();
+            });
+        }
+    }
+
+    window.abrirFormulario = function (tipo) {
+        abrirFormulario(tipo);
+    };
+
+    window.fecharFormulario = function () {
+        if (formModal) {
+            formModal.style.display = "none";
+        }
+    };
+
+    document.querySelectorAll(".abrir-formulario").forEach(function (button) {
+        button.addEventListener("click", function () {
+            abrirFormulario(button.dataset.form);
+        });
+    });
+
+    if (formModal) {
+        formModal.addEventListener("click", function (event) {
+            if (event.target === formModal) {
+                fecharFormulario();
+            }
+        });
+    }
+
 
     /* =====================================================
        FORMULÁRIO DE CONTATO
