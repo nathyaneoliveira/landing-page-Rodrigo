@@ -1,5 +1,6 @@
-
-/*VARIÁVEIS GLOBAIS*/
+/* =========================================================
+   VARIÁVEIS GLOBAIS
+   ========================================================= */
 
 :root {
     --verde-escuro: #0f2b24;
@@ -29,6 +30,7 @@ body {
     background: var(--branco);
     color: var(--texto-escuro);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 
@@ -52,6 +54,7 @@ header {
 .nav-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -64,6 +67,7 @@ header {
     display: flex;
     align-items: center;
     gap: 18px;
+    flex-shrink: 0;
 }
 
 .logo img {
@@ -128,6 +132,7 @@ header {
     padding: 12px 10px;
 
     background: transparent;
+
     border: 1.5px solid var(--dourado);
 
     color: var(--dourado);
@@ -136,6 +141,7 @@ header {
 
     font-size: 10px;
     letter-spacing: 2px;
+
     text-transform: uppercase;
     font-weight: 300;
 
@@ -218,6 +224,7 @@ header {
 
     font-weight: 600;
     letter-spacing: 2px;
+
     text-transform: uppercase;
 
     border-radius: 4px;
@@ -274,7 +281,13 @@ header {
    ========================================================= */
 
 section {
+    width: 100%;
+
     padding: 120px 8% 60px;
+
+    display: block;
+
+    clear: both;
 }
 
 .titulo-secao {
@@ -293,12 +306,21 @@ section {
    ========================================================= */
 
 .sobre {
+    width: 100%;
+
     background: #fff;
 
     padding: 120px 8%;
+
+    display: block;
+
+    clear: both;
+
+    overflow: hidden;
 }
 
 .sobre-container {
+    width: 100%;
     max-width: 1250px;
 
     margin: 0 auto;
@@ -315,9 +337,12 @@ section {
 }
 
 
-/* ---------- TEXTO ---------- */
+/* =========================================================
+   TEXTO DO SOBRE
+   ========================================================= */
 
 .sobre-texto {
+    width: 100%;
     max-width: 650px;
 }
 
@@ -332,6 +357,7 @@ section {
     font-weight: 600;
 
     letter-spacing: 3px;
+
     text-transform: uppercase;
 }
 
@@ -357,7 +383,9 @@ section {
 }
 
 
-/* ---------- DIFERENCIAIS ---------- */
+/* =========================================================
+   DIFERENCIAIS
+   ========================================================= */
 
 .diferenciais {
     display: grid;
@@ -396,7 +424,7 @@ section {
 
 
 /* =========================================================
-   CARROSSEL — ESCRITÓRIO
+   CARROSSEL
    ========================================================= */
 
 .sobre-carrossel {
@@ -406,10 +434,9 @@ section {
     max-width: 600px;
 
     margin: 0 auto;
+
+    box-sizing: border-box;
 }
-
-
-/* Área principal */
 
 .grainy-carousel {
     position: relative;
@@ -428,7 +455,9 @@ section {
 }
 
 
-/* Imagens */
+/* =========================================================
+   IMAGENS DO CARROSSEL
+   ========================================================= */
 
 .grainy-carousel img {
     position: absolute;
@@ -456,7 +485,9 @@ section {
 }
 
 
-/* Overlay escuro */
+/* =========================================================
+   OVERLAY
+   ========================================================= */
 
 .grainy-carousel::after {
     content: "";
@@ -473,10 +504,14 @@ section {
             rgba(15, 43, 36, 0.05),
             rgba(15, 43, 36, 0.35)
         );
+
+    z-index: 2;
 }
 
 
-/* Efeito granulado */
+/* =========================================================
+   EFEITO GRANULADO
+   ========================================================= */
 
 #grainCanvas {
     position: absolute;
@@ -496,7 +531,9 @@ section {
 }
 
 
-/* Navegação */
+/* =========================================================
+   CONTROLES DO CARROSSEL
+   ========================================================= */
 
 .carousel-controls {
     position: absolute;
@@ -541,7 +578,9 @@ section {
 }
 
 
-/* Indicadores */
+/* =========================================================
+   INDICADORES
+   ========================================================= */
 
 .carousel-indicators {
     position: absolute;
@@ -636,6 +675,8 @@ section {
    ========================================================= */
 
 .secao-formulario {
+    width: 100%;
+
     padding: 150px 8% 80px;
 
     background:
@@ -649,9 +690,6 @@ section {
 
     background-position: center;
 }
-
-
-/* ---------- TÍTULO ---------- */
 
 .secao-formulario .titulo-secao {
     color: var(--dourado);
@@ -669,6 +707,7 @@ section {
 .formulario {
     position: relative;
 
+    width: 100%;
     max-width: 720px;
 
     margin: 0 auto;
@@ -691,7 +730,9 @@ section {
 }
 
 
-/* Linha dourada */
+/* =========================================================
+   LINHA DOURADA
+   ========================================================= */
 
 .formulario::before {
     content: "";
@@ -799,44 +840,46 @@ section {
     opacity: 0.9;
 }
 
-/* =========================
-   CORREÇÃO DO FOOTER
-========================= */
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
 footer#localizacao {
-    width: 100%;
-    clear: both;
+    position: relative;
+
     display: block;
-    position: relative;
-    margin-top: 60px;
+
+    width: 100%;
+    min-width: 100%;
+
+    float: none;
+
+    clear: both;
+
+    margin: 0;
+
+    padding: 60px 8% 30px;
+
+    background: var(--verde-escuro);
+
+    color: #fff;
+
+    text-align: center;
+
     box-sizing: border-box;
 }
 
-/* Garante que o conteúdo principal termine antes do rodapé */
-main,
-section,
-.sobre,
-.sobre-container,
-.sobre-carrossel {
-    box-sizing: border-box;
+footer#localizacao p {
+    margin-bottom: 20px;
 }
 
-.sobre {
-    width: 100%;
-}
-
-.sobre-container {
-    width: 100%;
-}
-
-/* Impede que o carrossel "puxe" o footer para o lado */
-.sobre-carrossel {
-    width: 100%;
-    position: relative;
+footer#localizacao .btn-mapa {
+    margin-bottom: 10px;
 }
 
 /* =========================================================
-   RESPONSIVO — TABLET
+   TABLET
    ========================================================= */
 
 @media (max-width: 900px) {
@@ -866,7 +909,7 @@ section,
 
 
 /* =========================================================
-   RESPONSIVO — MOBILE
+   MOBILE
    ========================================================= */
 
 @media (max-width: 768px) {
@@ -910,7 +953,9 @@ section,
     }
 
 
-    /* HERO */
+    /* =====================================================
+       HERO
+       ===================================================== */
 
     .hero {
         margin-top: 0;
@@ -943,7 +988,9 @@ section,
     }
 
 
-    /* SEÇÕES */
+    /* =====================================================
+       SEÇÕES
+       ===================================================== */
 
     section {
         padding: 80px 5%;
@@ -956,10 +1003,20 @@ section,
     }
 
 
-    /* SOBRE */
+    /* =====================================================
+       SOBRE
+       ===================================================== */
 
     .sobre {
         padding: 80px 5%;
+    }
+
+    .sobre-container {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
     }
 
     .sobre-texto h2 {
@@ -977,14 +1034,26 @@ section,
     }
 
 
-    /* CARROSSEL */
+    /* =====================================================
+       CARROSSEL
+       ===================================================== */
+
+    .sobre-carrossel {
+        width: 100%;
+
+        max-width: 100%;
+    }
 
     .grainy-carousel {
+        width: 100%;
+
         height: 400px;
     }
 
 
-    /* FORMULÁRIO */
+    /* =====================================================
+       FORMULÁRIO
+       ===================================================== */
 
     .secao-formulario {
         padding: 100px 5% 60px;
@@ -1014,22 +1083,30 @@ section,
     }
 
 
-    /* FOOTER */
+    /* =====================================================
+       FOOTER
+       ===================================================== */
 
-    footer {
-        padding: 20px 5% 10px;
+    footer#localizacao {
+        width: 100%;
+
+        min-width: 100%;
+
+        padding: 40px 5% 25px;
+
+        margin: 0;
     }
 
-    footer p {
+    footer#localizacao p {
         font-size: 13px;
 
-        margin-bottom: 8px;
+        margin-bottom: 15px;
     }
 }
 
 
 /* =========================================================
-   RESPONSIVO — CELULARES PEQUENOS
+   CELULARES PEQUENOS
    ========================================================= */
 
 @media (max-width: 400px) {
@@ -1090,50 +1167,4 @@ section,
 
         font-size: 13px;
     }
-}
-
-/* =========================
-   FOOTER ABAIXO DO CONTEÚDO
-========================= */
-
-footer#localizacao {
-    position: relative !important;
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    float: none !important;
-    clear: both !important;
-    margin-top: 80px !important;
-    box-sizing: border-box !important;
-}
-
-/* O conteúdo do Sobre ocupa uma única seção */
-.sobre {
-    display: block !important;
-    width: 100% !important;
-}
-
-/* Container do Sobre */
-.sobre-container {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-}
-
-/* Texto e carrossel */
-.sobre-texto {
-    box-sizing: border-box;
-}
-
-.sobre-carrossel {
-    position: relative;
-    box-sizing: border-box;
-}
-
-/* Evita elementos flutuando ao lado do footer */
-.sobre::after {
-    content: "";
-    display: block;
-    clear: both;
 }
