@@ -90,8 +90,7 @@
                     </span>
 
                     <h2>
-                        Sobre o<br>
-                        Escritório
+                        Sobre o Escritório
                     </h2>
 
                     <p>
@@ -363,10 +362,21 @@
             </h2>
 
 
-            <div class="grid-3 equipe">
+            <div class="equipe-wrapper">
+
+                <button
+                    type="button"
+                    class="equipe-btn equipe-btn-prev"
+                    aria-label="Anterior">
+                    ‹
+                </button>
+
+                <div class="equipe-carousel" id="equipeCarousel">
+
+                    <div class="equipe">
 
 
-                <!-- RODRIGO -->
+                        <!-- RODRIGO -->
 
                 <div
                     class="card"
@@ -750,8 +760,18 @@
                         Direito do Consumidor e Direito Administrativo.
                     </h5>
 
+                        </div>
+
+                    </div>
+
                 </div>
 
+                <button
+                    type="button"
+                    class="equipe-btn equipe-btn-next"
+                    aria-label="Próximo">
+                    ›
+                </button>
 
             </div>
 
@@ -802,11 +822,6 @@
                 aria-label="Fechar">
                 ×
             </button>
-
-            <img
-                id="fotoModal"
-                src=""
-                alt="Foto do advogado">
 
             <h2 id="nomeModal"></h2>
 

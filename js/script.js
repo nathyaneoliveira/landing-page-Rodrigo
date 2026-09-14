@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
 
-        modal.style.display = "block";
+        modal.style.display = "flex";
     };
 
 
@@ -173,6 +173,48 @@ document.addEventListener("DOMContentLoaded", function () {
             modal.style.display = "none";
         }
     });
+
+
+    /* =====================================================
+       CARROSSEL DA EQUIPE
+       ===================================================== */
+
+    const equipeCarousel = document.getElementById("equipeCarousel");
+
+    if (equipeCarousel) {
+
+        const equipe = equipeCarousel.querySelector(".equipe");
+        const btnEquipeAnterior = document.querySelector(".equipe-btn-prev");
+        const btnEquipeProximo = document.querySelector(".equipe-btn-next");
+
+        if (equipe && btnEquipeAnterior && btnEquipeProximo) {
+
+            const getEquipeScrollAmount = function () {
+
+                const primeiroCard = equipe.querySelector(".card");
+
+                if (!primeiroCard) {
+                    return equipeCarousel.clientWidth * 0.85;
+                }
+
+                return primeiroCard.offsetWidth + 24;
+            };
+
+            btnEquipeAnterior.addEventListener("click", function () {
+                equipeCarousel.scrollBy({
+                    left: -getEquipeScrollAmount(),
+                    behavior: "smooth"
+                });
+            });
+
+            btnEquipeProximo.addEventListener("click", function () {
+                equipeCarousel.scrollBy({
+                    left: getEquipeScrollAmount(),
+                    behavior: "smooth"
+                });
+            });
+        }
+    }
 
 
     /* =====================================================
