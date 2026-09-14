@@ -741,6 +741,174 @@ section {
 
 
 /* =========================================================
+   MODAL
+   ========================================================= */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 120px 20px 40px;
+
+    background: rgba(15, 43, 36, 0.65);
+}
+
+.form-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2100;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+
+    background: rgba(15, 43, 36, 0.72);
+}
+
+.form-modal-conteudo {
+    position: relative;
+    width: min(360px, 100%);
+
+    max-height: calc(100vh - 80px);
+
+    padding: 18px 14px 14px;
+
+    background: #fff;
+
+    border: 2px solid var(--dourado);
+    border-radius: 14px;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
+
+    overflow: auto;
+
+    font-size: 12px;
+}
+
+.form-modal-conteudo .titulo-secao {
+    margin-bottom: 10px;
+
+    font-size: clamp(20px, 1.5vw, 24px);
+    color: var(--verde-escuro);
+}
+
+.form-modal-conteudo .formulario {
+    max-width: none;
+
+    margin: 0;
+    padding: 10px 4px 0;
+
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+.form-modal-conteudo .btn-dourado {
+    padding: 9px 18px;
+
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.form-modal .modal-fechar {
+    color: var(--verde-escuro);
+    font-size: 28px;
+}
+
+.form-modal-localizacao {
+    margin-top: 14px;
+    font-size: 12px;
+}
+
+.form-modal-map-wrap {
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    border: 1px solid rgba(15, 43, 36, 0.15);
+
+    margin-bottom: 10px;
+}
+
+.form-modal-map-wrap iframe {
+    display: block;
+
+    width: 100%;
+    height: 140px;
+
+    border: none;
+}
+
+.form-modal-btn-localizacao {
+    display: inline-block;
+
+    padding: 8px 14px;
+
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.modal-conteudo {
+    position: relative;
+    width: min(760px, 100%);
+
+    padding: 40px 30px 30px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(15, 43, 36, 0.97),
+        rgba(30, 90, 77, 0.97)
+    );
+
+    border: 2px solid var(--dourado);
+    border-radius: 18px;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
+
+    color: #fff;
+}
+
+.modal-conteudo h2 {
+    margin-bottom: 16px;
+
+    color: #fff;
+    font-size: clamp(28px, 3vw, 36px);
+}
+
+.modal-conteudo p {
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.modal-fechar {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+
+    border: none;
+    background: transparent;
+
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+.modal-fechar:hover {
+    color: var(--dourado);
+}
+
+
+/* =========================================================
    EQUIPE
    ========================================================= */
 
