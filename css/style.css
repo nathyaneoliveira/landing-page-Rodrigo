@@ -179,9 +179,15 @@ header {
     color: #fff;
 
     background:
-        linear-gradient(rgba(15, 43, 36, 0.78),
-            rgba(15, 43, 36, 0.88)),
-        url('../assets/FRENTE.jpg') center / cover no-repeat;
+        linear-gradient(
+            rgba(15, 43, 36, 0.78),
+            rgba(15, 43, 36, 0.88)
+        ),
+        url('../assets/FRENTE.jpg');
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero-conteudo {
