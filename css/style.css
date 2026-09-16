@@ -179,10 +179,8 @@ header {
     color: #fff;
 
     background:
-        linear-gradient(
-            rgba(15, 43, 36, 0.78),
-            rgba(15, 43, 36, 0.88)
-        ),
+        linear-gradient(rgba(15, 43, 36, 0.78),
+            rgba(15, 43, 36, 0.88)),
         url('../assets/img/FOTO - FRENTE.jpg');
 
     background-position: center;
@@ -1292,194 +1290,179 @@ footer#localizacao .copyright {
 
 @media (max-width: 768px) {
 
-    header {
-        padding: 10px 3%;
-    }
-
-    .nav-container {
-        flex-direction: column;
-
-        justify-content: center;
-
-        gap: 8px;
-    }
-
-    .logo {
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 6px;
-    }
-
-    .logo img {
-        height: 80px;
-    }
-
-    .menu-links {
-        justify-content: center;
-
-        flex-wrap: wrap;
-
-        gap: 10px;
-    }
-
-    .menu-links a {
-        font-size: 10px;
-
-        letter-spacing: 1px;
-    }
-
-
-    /* =====================================================
-       HERO
-       ===================================================== */
-
     .hero {
-        margin-top: 0;
-
-        padding: 180px 20px 80px;
-
-        min-height: 100vh;
+        min-height: 60vh;
+        padding: 110px 20px 60px;
     }
 
     .hero h1 {
-        font-size: 30px;
-
-        line-height: 1.3;
+        font-size: 32px;
+        line-height: 1.15;
     }
 
     .hero p {
-        font-size: 16px;
-
-        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 25px;
     }
 
-    .btn-dourado {
-        width: 100%;
-
-        max-width: 320px;
-
-        padding: 14px;
-
+    .hero .btn-dourado {
+        padding: 12px 22px;
         font-size: 13px;
     }
 
+}
 
-    /* =====================================================
+
+/* =====================================================
+       HERO
+       ===================================================== */
+
+.hero {
+    margin-top: 0;
+
+    padding: 180px 20px 80px;
+
+    min-height: 100vh;
+}
+
+.hero h1 {
+    font-size: 30px;
+
+    line-height: 1.3;
+}
+
+.hero p {
+    font-size: 16px;
+
+    margin-bottom: 30px;
+}
+
+.btn-dourado {
+    width: 100%;
+
+    max-width: 320px;
+
+    padding: 14px;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
        SEÇÕES
        ===================================================== */
 
-    section {
-        padding: 80px 5%;
-    }
+section {
+    padding: 80px 5%;
+}
 
-    .titulo-secao {
-        font-size: 32px;
+.titulo-secao {
+    font-size: 32px;
 
-        margin-bottom: 45px;
-    }
+    margin-bottom: 45px;
+}
 
 
-    /* =====================================================
+/* =====================================================
        SOBRE
        ===================================================== */
 
-    .sobre {
-        padding: 80px 5%;
-    }
+.sobre {
+    padding: 80px 5%;
+}
 
-    .sobre-container {
-        display: grid;
+.sobre-container {
+    display: grid;
 
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
 
-        gap: 45px;
-    }
+    gap: 45px;
+}
 
-    .sobre-texto h2 {
-        font-size: 34px;
-    }
+.sobre-texto h2 {
+    font-size: 34px;
+}
 
-    .sobre-texto>p {
-        font-size: 15px;
-    }
+.sobre-texto>p {
+    font-size: 15px;
+}
 
-    .diferenciais {
-        grid-template-columns: 1fr;
+.diferenciais {
+    grid-template-columns: 1fr;
 
-        gap: 12px;
-    }
+    gap: 12px;
+}
 
 
-    /* =====================================================
+/* =====================================================
        CARROSSEL
        ===================================================== */
 
-    .sobre-carrossel {
-        width: 100%;
+.sobre-carrossel {
+    width: 100%;
 
-        max-width: 100%;
-    }
+    max-width: 100%;
+}
 
-    .grainy-carousel {
-        width: 100%;
+.grainy-carousel {
+    width: 100%;
 
-        height: 400px;
-    }
+    height: 400px;
+}
 
 
-    /* =====================================================
+/* =====================================================
        FORMULÁRIO
        ===================================================== */
 
-    .secao-formulario {
-        padding: 100px 5% 60px;
-    }
+.secao-formulario {
+    padding: 100px 5% 60px;
+}
 
-    .secao-formulario .titulo-secao {
-        font-size: 30px;
+.secao-formulario .titulo-secao {
+    font-size: 30px;
 
-        margin-bottom: 40px;
-    }
+    margin-bottom: 40px;
+}
 
-    .formulario {
-        padding: 40px 20px;
-    }
+.formulario {
+    padding: 40px 20px;
+}
 
-    .botoes-form {
-        flex-direction: column;
+.botoes-form {
+    flex-direction: column;
 
-        gap: 15px;
-    }
+    gap: 15px;
+}
 
-    .btn-dourado,
-    .btn-voltar {
-        width: 100%;
+.btn-dourado,
+.btn-voltar {
+    width: 100%;
 
-        text-align: center;
-    }
+    text-align: center;
+}
 
 
-    /* =====================================================
+/* =====================================================
        FOOTER
        ===================================================== */
 
-    footer#localizacao {
-        width: 100%;
+footer#localizacao {
+    width: 100%;
 
-        min-width: 100%;
+    min-width: 100%;
 
-        padding: 40px 5% 25px;
+    padding: 40px 5% 25px;
 
-        margin: 0;
-    }
+    margin: 0;
+}
 
-    footer#localizacao p {
-        font-size: 13px;
+footer#localizacao p {
+    font-size: 13px;
 
-        margin-bottom: 15px;
-    }
+    margin-bottom: 15px;
+}
 }
 
 
