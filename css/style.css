@@ -181,7 +181,7 @@ header {
             rgba(15, 43, 36, 0.88),
             rgba(15, 43, 36, 0.88)
         ),
-        url('assets/FRENTE.jpg')
+        url('../assets/FRENTE.jpg')
         center / cover no-repeat;
 }
 
