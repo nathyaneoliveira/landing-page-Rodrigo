@@ -32,22 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         </button>
                     </div>
                 </form>
-                <div class="form-modal-localizacao">
-                    <div class="form-modal-map-wrap">
-                        <iframe
-                            src="https://www.google.com/maps?q=-6.838925,-35.125210&output=embed"
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <a
-                        href="https://www.google.com/maps?q=-6.838925,-35.125210"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn-mapa form-modal-btn-localizacao">
-                        Ver localização
-                    </a>
                 </div>
             `
         },
@@ -74,22 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         </button>
                     </div>
                 </form>
-                <div class="form-modal-localizacao">
-                    <div class="form-modal-map-wrap">
-                        <iframe
-                            src="https://www.google.com/maps?q=-6.838925,-35.125210&output=embed"
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <a
-                        href="https://www.google.com/maps?q=-6.838925,-35.125210"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn-mapa form-modal-btn-localizacao">
-                        Ver localização
-                    </a>
                 </div>
             `
         }
