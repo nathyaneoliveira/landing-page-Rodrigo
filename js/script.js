@@ -4,8 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
        CONFIGURAÇÕES
        ===================================================== */
 
+    /*const NUMERO_CONTATO = "5583998565071";
+    const NUMERO_PARCERIA = "5583998565071";*/
     const NUMERO_CONTATO = "5583988731369";
-    const NUMERO_PARCERIA = "5583998565071";
+    const NUMERO_PARCERIA = "5583988731369";
 
     const FORMULARIOS = {
         contato: {
