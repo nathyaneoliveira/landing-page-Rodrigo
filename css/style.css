@@ -181,7 +181,7 @@ header {
             rgba(15, 43, 36, 0.88),
             rgba(15, 43, 36, 0.88)
         ),
-        url('https://us.123rf.com/450wm/stockstudio44/stockstudio442208/stockstudio44220800009/191115375-tema-da-lei-escrit%C3%B3rio-do-juiz-themis-e-martelo-na-mesa-do-juiz-prateleira-do-livro-no-fundo.jpg?ver=6')
+        url('assets/FRENTE.jpg')
         center / cover no-repeat;
 }
 
@@ -255,12 +255,10 @@ header {
     width: 60%;
     height: 100%;
 
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255, 255, 255, 0.4),
-        transparent
-    );
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent);
 
     transform: skewX(-25deg);
 }
@@ -328,8 +326,7 @@ section {
     display: grid;
 
     grid-template-columns:
-        minmax(0, 1fr)
-        minmax(420px, 1fr);
+        minmax(0, 1fr) minmax(420px, 1fr);
 
     align-items: center;
 
@@ -372,7 +369,7 @@ section {
     margin-bottom: 25px;
 }
 
-.sobre-texto > p {
+.sobre-texto>p {
     color: #555;
 
     font-size: 16px;
@@ -499,11 +496,9 @@ section {
     pointer-events: none;
 
     background:
-        linear-gradient(
-            180deg,
+        linear-gradient(180deg,
             rgba(15, 43, 36, 0.05),
-            rgba(15, 43, 36, 0.35)
-        );
+            rgba(15, 43, 36, 0.35));
 
     z-index: 2;
 }
@@ -860,11 +855,9 @@ section {
 
     padding: 40px 30px 30px;
 
-    background: linear-gradient(
-        135deg,
-        rgba(15, 43, 36, 0.97),
-        rgba(30, 90, 77, 0.97)
-    );
+    background: linear-gradient(135deg,
+            rgba(15, 43, 36, 0.97),
+            rgba(30, 90, 77, 0.97));
 
     border: 2px solid var(--dourado);
     border-radius: 18px;
@@ -982,10 +975,8 @@ section {
     padding: 150px 8% 80px;
 
     background:
-        linear-gradient(
-            rgba(15, 43, 36, 0.95),
-            rgba(15, 43, 36, 0.95)
-        ),
+        linear-gradient(rgba(15, 43, 36, 0.95),
+            rgba(15, 43, 36, 0.95)),
         url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80');
 
     background-size: cover;
@@ -1047,12 +1038,10 @@ section {
     width: 100%;
     height: 5px;
 
-    background: linear-gradient(
-        90deg,
-        #b8962e,
-        var(--dourado),
-        #b8962e
-    );
+    background: linear-gradient(90deg,
+            #b8962e,
+            var(--dourado),
+            #b8962e);
 }
 
 
@@ -1337,7 +1326,7 @@ footer#localizacao .copyright {
         font-size: 34px;
     }
 
-    .sobre-texto > p {
+    .sobre-texto>p {
         font-size: 15px;
     }
 
